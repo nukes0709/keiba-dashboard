@@ -210,70 +210,29 @@ a { color: var(--blue); text-decoration: none; }
     </div>
   </section>
   <div class="container" style="padding-top:36px;">
-    <!-- 実運用セクション（メイン） -->
-    <section class="section" id="c-live-section" style="display:none;">
-      <div class="section-header"><h2 class="section-title">馬券種別成績</h2><span class="badge badge-live">LIVE</span></div>
-      <div class="bet-type-grid" id="c-bet-types"></div>
+    <section class="section">
+      <div class="section-header"><h2 class="section-title">月次ROI推移</h2></div>
+      <div class="chart-wrap"><canvas id="c-monthly-chart" height="280"></canvas></div>
     </section>
-    <section class="section" id="c-live-daily-section" style="display:none;">
-      <div class="section-header"><h2 class="section-title">日別成績</h2></div>
+    <section class="section">
+      <div class="section-header"><h2 class="section-title">累積損益</h2></div>
+      <div class="chart-wrap"><canvas id="c-cum-chart" height="250"></canvas></div>
+    </section>
+    <section class="section" id="c-strat-section">
+      <div class="section-header"><h2 class="section-title">戦略別成績</h2></div>
+      <div class="strat-grid" id="c-strategies"></div>
+    </section>
+    <section class="section">
+      <div class="section-header"><h2 class="section-title">会場別ROI</h2></div>
+      <div class="venue-grid" id="c-venues" style="grid-template-columns:repeat(5,1fr);"></div>
+    </section>
+    <section class="section" id="c-history-section" style="display:none;">
+      <div class="section-header"><h2 class="section-title">直近のレース結果</h2></div>
       <div class="race-table-wrap"><div class="table-scroll">
-        <table class="race-table"><thead><tr><th>日付</th><th>ベット数</th><th>馬連的中</th><th>馬単的中</th><th>投資</th><th>回収</th><th>損益</th></tr></thead>
-        <tbody id="c-live-daily"></tbody></table>
+        <table class="race-table"><thead><tr><th>日付</th><th>会場</th><th>R</th><th>馬連</th><th>馬単</th><th>投資</th><th>回収</th><th>損益</th></tr></thead>
+        <tbody id="c-history"></tbody></table>
       </div></div>
     </section>
-    <section class="section" id="c-results-section" style="display:none;">
-      <div class="section-header"><h2 class="section-title">レース結果詳細</h2></div>
-      <div class="race-table-wrap"><div class="table-scroll">
-        <table class="race-table"><thead><tr><th>日付</th><th>会場</th><th>R</th><th>距離</th><th>◎→○</th><th>◎着</th><th>○着</th><th>EV</th><th>馬連</th><th>馬単</th></tr></thead>
-        <tbody id="c-results-table"></tbody></table>
-      </div></div>
-    </section>
-    <section class="section" id="c-pending-section" style="display:none;">
-      <div class="section-header"><h2 class="section-title">結果待ちの予測</h2><span class="pending-badge">PENDING</span></div>
-      <div class="race-table-wrap"><div class="table-scroll">
-        <table class="race-table"><thead><tr><th>日付</th><th>会場</th><th>R</th><th>距離</th><th>◎→○</th><th>EV</th></tr></thead>
-        <tbody id="c-pending-table"></tbody></table>
-      </div></div>
-    </section>
-
-    <!-- バックテスト（折りたたみ） -->
-    <details class="section" style="margin-bottom:40px;">
-      <summary style="cursor:pointer;font-size:17px;font-weight:700;display:flex;align-items:center;gap:10px;padding:12px 0;user-select:none;">
-        <span style="width:3px;height:20px;background:linear-gradient(180deg,var(--gray-400),var(--gray-500));border-radius:2px;flex-shrink:0;"></span>
-        バックテスト参考データ
-        <span style="font-size:12px;font-weight:500;color:var(--gray-500);margin-left:4px;">（クリックで展開）</span>
-      </summary>
-      <div style="padding-top:20px;">
-        <section class="section">
-          <div class="section-header"><h2 class="section-title">月次ROI推移</h2></div>
-          <div class="chart-wrap"><canvas id="c-monthly-chart" height="280"></canvas></div>
-        </section>
-        <section class="section">
-          <div class="section-header"><h2 class="section-title">累積損益</h2></div>
-          <div class="chart-wrap"><canvas id="c-cum-chart" height="250"></canvas></div>
-        </section>
-        <section class="section" id="c-ev-section">
-          <div class="section-header"><h2 class="section-title">EV帯別成績</h2></div>
-          <div class="ev-grid" id="c-ev-bands"></div>
-        </section>
-        <section class="section" id="c-splits-section" style="display:none;">
-          <div class="section-header"><h2 class="section-title">ウォークフォワード スプリット別</h2></div>
-          <div class="split-grid" id="c-splits"></div>
-        </section>
-        <section class="section">
-          <div class="section-header"><h2 class="section-title">会場別ROI</h2></div>
-          <div class="venue-grid" id="c-venues"></div>
-        </section>
-        <section class="section">
-          <div class="section-header"><h2 class="section-title">バックテスト ベット履歴</h2><span class="badge badge-live">BACKTEST</span></div>
-          <div class="race-table-wrap"><div class="table-scroll">
-            <table class="race-table"><thead><tr><th>日付</th><th>会場</th><th>馬名</th><th>馬番</th><th>人気</th><th>予測確率</th><th>推定Odds</th><th>EV</th><th>賭金</th><th>結果</th><th>払戻</th></tr></thead>
-            <tbody id="c-history"></tbody></table>
-          </div></div>
-        </section>
-      </div>
-    </details>
   </div>
 </div>
 
@@ -374,6 +333,7 @@ function renderCentral(data) {
       <div class="kpi-card"><div class="kpi-label">累積損益</div><div class="kpi-value ${pnlClass(s.profit)}">${s.profit>=0?'+':''}${fmt(s.profit)}<span class="unit">円</span></div><div class="kpi-sub">回収: ${fmt(s.total_return)}円</div></div>`;
   }
 
+  // 月次ROI / 累積損益（バックテストデータ）
   if (data.monthly && data.monthly.length) {
     makeChart('c-monthly-chart', 'bar', data.monthly.map(m=>m.month), [{
       data: data.monthly.map(m=>m.roi),
@@ -387,43 +347,26 @@ function renderCentral(data) {
     }], { scales: { y: { grid:{color:'rgba(0,0,0,.04)'}, ticks:{callback:v=>(v>=0?'+':'')+fmt(v)+'円'} }, x:{grid:{display:false}} } });
   }
 
-  if (data.ev_bands && data.ev_bands.length)
-    document.getElementById('c-ev-bands').innerHTML = data.ev_bands.map(b=>`<div class="ev-card"><div class="ev-card-label">${b.label}</div><div class="ev-card-roi ${roiClass(b.roi)}">${b.roi}%</div><div class="ev-card-sub">${b.n_bets}件 / 的中${b.hit_rate}% / ${b.profit>=0?'+':''}${fmt(b.profit)}円</div></div>`).join('');
-
-  if (data.splits && data.splits.length) {
-    document.getElementById('c-splits-section').style.display = '';
-    document.getElementById('c-splits').innerHTML = data.splits.map(sp=>`<div class="split-card"><div class="split-card-name">${sp.split}</div><div class="split-card-metrics"><div><div class="split-metric-label">ROI</div><div class="split-metric-val ${roiClass(sp.roi)}">${sp.roi}%</div></div><div><div class="split-metric-label">的中率</div><div class="split-metric-val">${sp.hit_rate}%</div></div><div><div class="split-metric-label">ベット</div><div class="split-metric-val">${sp.n_bets}</div></div><div><div class="split-metric-label">最大DD</div><div class="split-metric-val negative">${sp.max_drawdown}%</div></div></div></div>`).join('');
+  // 戦略別成績 = EV帯別成績（中央はEV帯で運用）
+  if (data.ev_bands && data.ev_bands.length) {
+    document.getElementById('c-strategies').innerHTML = data.ev_bands.map(b =>
+      `<div class="strat-card"><div class="strat-top"><div class="strat-name">${b.label}</div></div><div class="strat-metrics"><div class="strat-metric"><div class="strat-metric-val ${roiClass(b.roi)}">${b.roi}%</div><div class="strat-metric-lbl">ROI</div></div><div class="strat-metric"><div class="strat-metric-val">${b.hit_rate}%</div><div class="strat-metric-lbl">的中率</div></div><div class="strat-metric"><div class="strat-metric-val">${b.n_bets}</div><div class="strat-metric-lbl">ベット数</div></div></div></div>`
+    ).join('');
   }
 
+  // 会場別ROI
   if (data.venues && data.venues.length)
     document.getElementById('c-venues').innerHTML = data.venues.map(v=>`<div class="venue-card"><div class="venue-card-name"><span class="venue-tag ${vcJRA[v.venue]||''}">${v.venue}</span></div><div class="venue-card-roi ${roiClass(v.roi)}">${v.roi}%</div><div class="venue-card-sub">${v.n_bets}件 / ${v.profit>=0?'+':''}${fmt(v.profit)}円</div></div>`).join('');
 
-  // 実運用セクション詳細
-  if (live && live.status === 'live') {
-    const ls = live.summary;
-    document.getElementById('c-live-section').style.display = '';
-    document.getElementById('c-bet-types').innerHTML = `
-      <div class="bet-type-card"><div class="bet-type-title">馬連</div><div class="bet-type-metrics"><div class="bt-metric"><div class="bt-metric-val ${roiClass(ls.quinella.roi||0)}">${ls.quinella.roi||0}%</div><div class="bt-metric-label">ROI</div></div><div class="bt-metric"><div class="bt-metric-val">${ls.quinella.hit_rate||0}%</div><div class="bt-metric-label">的中率</div></div><div class="bt-metric"><div class="bt-metric-val ${pnlClass(ls.quinella.pnl||0)}">${(ls.quinella.pnl||0)>=0?'+':''}${fmt(ls.quinella.pnl||0)}</div><div class="bt-metric-label">損益</div></div></div></div>
-      <div class="bet-type-card"><div class="bet-type-title">馬単</div><div class="bet-type-metrics"><div class="bt-metric"><div class="bt-metric-val ${roiClass(ls.exacta.roi||0)}">${ls.exacta.roi||0}%</div><div class="bt-metric-label">ROI</div></div><div class="bt-metric"><div class="bt-metric-val">${ls.exacta.hit_rate||0}%</div><div class="bt-metric-label">的中率</div></div><div class="bt-metric"><div class="bt-metric-val ${pnlClass(ls.exacta.pnl||0)}">${(ls.exacta.pnl||0)>=0?'+':''}${fmt(ls.exacta.pnl||0)}</div><div class="bt-metric-label">損益</div></div></div></div>`;
-
-    if (live.daily && live.daily.length) {
-      document.getElementById('c-live-daily-section').style.display = '';
-      document.getElementById('c-live-daily').innerHTML = live.daily.map(d=>`<tr><td>${d.date}</td><td style="text-align:center">${d.n_bets}</td><td class="${d.quinella_hits>0?'result-hit':'result-miss'}" style="text-align:center">${d.quinella_hits}</td><td class="${d.exacta_hits>0?'result-hit':'result-miss'}" style="text-align:center">${d.exacta_hits}</td><td class="payout">${fmt(d.cost)}円</td><td class="payout">${fmt(d.total_payout)}円</td><td class="payout ${pnlClass(d.pnl)}">${d.pnl>=0?'+':''}${fmt(d.pnl)}円</td></tr>`).join('');
-    }
-
-    if (live.results && live.results.length) {
-      document.getElementById('c-results-section').style.display = '';
-      document.getElementById('c-results-table').innerHTML = live.results.map(r=>`<tr><td>${r.date}</td><td><span class="venue-tag ${vcJRA[r.venue]||''}">${r.venue}</span></td><td style="text-align:center">${r.race_number}</td><td>${r.surface}${r.distance}m</td><td>${r.pick1_name}→${r.pick2_name}</td><td style="text-align:center">${r.pick1_pos}</td><td style="text-align:center">${r.pick2_pos}</td><td class="payout">${r.ev}</td><td class="payout ${r.quinella_hit?'result-hit':'result-miss'}">${r.quinella_hit?fmt(r.quinella_payout)+'円':'-'}</td><td class="payout ${r.exacta_hit?'result-hit':'result-miss'}">${r.exacta_hit?fmt(r.exacta_payout)+'円':'-'}</td></tr>`).join('');
-    }
-
-    if (live.pending && live.pending.length) {
-      document.getElementById('c-pending-section').style.display = '';
-      document.getElementById('c-pending-table').innerHTML = live.pending.map(p=>`<tr><td>${p.date}</td><td><span class="venue-tag ${vcJRA[p.venue]||''}">${p.venue}</span></td><td style="text-align:center">${p.race_number}</td><td>${p.surface}${p.distance}m</td><td>${p.pick1_name}→${p.pick2_name}</td><td class="payout">${p.ev}</td></tr>`).join('');
-    }
+  // 直近のレース結果（実運用 live.daily）
+  if (live && live.status === 'live' && live.daily && live.daily.length) {
+    document.getElementById('c-history-section').style.display = '';
+    document.getElementById('c-history').innerHTML = live.daily.map(d => {
+      const venue = (live.results||[]).find(r=>r.date===d.date)?.venue || '';
+      const raceNum = (live.results||[]).find(r=>r.date===d.date)?.race_number || '';
+      return `<tr><td>${d.date}</td><td>${venue ? `<span class="venue-tag ${vcJRA[venue]||''}">${venue}</span>` : '-'}</td><td style="text-align:center">${raceNum||'-'}</td><td class="${d.quinella_hits>0?'result-hit':'result-miss'}" style="text-align:center">${d.quinella_hits}</td><td class="${d.exacta_hits>0?'result-hit':'result-miss'}" style="text-align:center">${d.exacta_hits}</td><td class="payout">${fmt(d.cost)}円</td><td class="payout">${fmt(d.total_payout)}円</td><td class="payout ${pnlClass(d.pnl)}">${d.pnl>=0?'+':''}${fmt(d.pnl)}円</td></tr>`;
+    }).join('');
   }
-
-  if (data.history && data.history.length)
-    document.getElementById('c-history').innerHTML = data.history.map(h=>`<tr><td>${h.race_date}</td><td><span class="venue-tag ${vcJRA[h.venue]||''}">${h.venue}</span></td><td>${h.horse_name}</td><td style="text-align:center">${h.horse_number}</td><td style="text-align:center">${h.popularity||'-'}</td><td class="payout">${(h.predicted_prob*100).toFixed(1)}%</td><td class="payout">${h.estimated_odds}倍</td><td class="payout">${h.ev}</td><td class="payout">${fmt(h.bet_amount)}円</td><td class="${h.actual_win?'result-hit':'result-miss'}">${h.actual_win?'的中':'ハズレ'}</td><td class="payout ${h.actual_win?'result-hit':''}">${h.actual_payout>0?fmt(h.actual_payout)+'円':'-'}</td></tr>`).join('');
 }
 
 // ===== 地方競馬 =====
