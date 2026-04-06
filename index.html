@@ -291,6 +291,10 @@ function fmt(n) { return n != null ? n.toLocaleString() : '-'; }
 function roiClass(roi) { return roi >= 100 ? 'positive' : 'negative'; }
 function pnlClass(pnl) { return pnl >= 0 ? 'positive' : 'negative'; }
 
+// 表示開始日（この日以降のデータのみ表示）
+const DISPLAY_START_DATE = '2026-03-07';
+const DISPLAY_START_MONTH = '2026-03';
+
 const vcJRA = {'札幌':'venue-sapporo','函館':'venue-hakodate','福島':'venue-fukushima','新潟':'venue-niigata','東京':'venue-tokyo','中山':'venue-nakayama','中京':'venue-chukyo','京都':'venue-kyoto','阪神':'venue-hanshin','小倉':'venue-kokura'};
 const vcLocal = {'川崎':'venue-kawasaki','大井':'venue-ooi','船橋':'venue-funabashi','浦和':'venue-urawa','名古屋':'venue-nagoya','園田':'venue-sonoda'};
 
@@ -333,16 +337,20 @@ function renderCentral(data) {
       <div class="kpi-card"><div class="kpi-label">累積損益</div><div class="kpi-value ${pnlClass(s.profit)}">${s.profit>=0?'+':''}${fmt(s.profit)}<span class="unit">円</span></div><div class="kpi-sub">回収: ${fmt(s.total_return)}円</div></div>`;
   }
 
-  // 月次ROI / 累積損益（バックテストデータ）
+  // 月次ROI / 累積損益（バックテストデータ、表示開始月以降のみ・累積はリセット）
   if (data.monthly && data.monthly.length) {
-    makeChart('c-monthly-chart', 'bar', data.monthly.map(m=>m.month), [{
-      data: data.monthly.map(m=>m.roi),
-      backgroundColor: data.monthly.map(m=>m.roi>=100?'rgba(34,197,94,.6)':'rgba(239,68,68,.5)'),
+    const monthly = data.monthly.filter(m => m.month >= DISPLAY_START_MONTH);
+    let cum = 0;
+    const monthlyAdj = monthly.map(m => { cum += (m.pnl||0); return {...m, cum_pnl: cum}; });
+
+    makeChart('c-monthly-chart', 'bar', monthlyAdj.map(m=>m.month), [{
+      data: monthlyAdj.map(m=>m.roi),
+      backgroundColor: monthlyAdj.map(m=>m.roi>=100?'rgba(34,197,94,.6)':'rgba(239,68,68,.5)'),
       borderRadius: 6, borderSkipped: false,
     }], { scales: { y: { beginAtZero:false, grid:{color:'rgba(0,0,0,.04)'}, ticks:{callback:v=>v+'%'} }, x:{grid:{display:false}} } });
 
-    makeChart('c-cum-chart', 'line', data.monthly.map(m=>m.month), [{
-      data: data.monthly.map(m=>m.cum_pnl),
+    makeChart('c-cum-chart', 'line', monthlyAdj.map(m=>m.month), [{
+      data: monthlyAdj.map(m=>m.cum_pnl),
       borderColor:'#22c55e', backgroundColor:'rgba(34,197,94,.1)', fill:true, tension:.3, pointRadius:4, pointBackgroundColor:'#22c55e',
     }], { scales: { y: { grid:{color:'rgba(0,0,0,.04)'}, ticks:{callback:v=>(v>=0?'+':'')+fmt(v)+'円'} }, x:{grid:{display:false}} } });
   }
@@ -358,14 +366,17 @@ function renderCentral(data) {
   if (data.venues && data.venues.length)
     document.getElementById('c-venues').innerHTML = data.venues.map(v=>`<div class="venue-card"><div class="venue-card-name"><span class="venue-tag ${vcJRA[v.venue]||''}">${v.venue}</span></div><div class="venue-card-roi ${roiClass(v.roi)}">${v.roi}%</div><div class="venue-card-sub">${v.n_bets}件 / ${v.profit>=0?'+':''}${fmt(v.profit)}円</div></div>`).join('');
 
-  // 直近のレース結果（実運用 live.daily）
+  // 直近のレース結果（実運用 live.daily、表示開始日以降のみ）
   if (live && live.status === 'live' && live.daily && live.daily.length) {
-    document.getElementById('c-history-section').style.display = '';
-    document.getElementById('c-history').innerHTML = live.daily.map(d => {
-      const venue = (live.results||[]).find(r=>r.date===d.date)?.venue || '';
-      const raceNum = (live.results||[]).find(r=>r.date===d.date)?.race_number || '';
-      return `<tr><td>${d.date}</td><td>${venue ? `<span class="venue-tag ${vcJRA[venue]||''}">${venue}</span>` : '-'}</td><td style="text-align:center">${raceNum||'-'}</td><td class="${d.quinella_hits>0?'result-hit':'result-miss'}" style="text-align:center">${d.quinella_hits}</td><td class="${d.exacta_hits>0?'result-hit':'result-miss'}" style="text-align:center">${d.exacta_hits}</td><td class="payout">${fmt(d.cost)}円</td><td class="payout">${fmt(d.total_payout)}円</td><td class="payout ${pnlClass(d.pnl)}">${d.pnl>=0?'+':''}${fmt(d.pnl)}円</td></tr>`;
-    }).join('');
+    const dailyFiltered = live.daily.filter(d => d.date >= DISPLAY_START_DATE);
+    if (dailyFiltered.length) {
+      document.getElementById('c-history-section').style.display = '';
+      document.getElementById('c-history').innerHTML = dailyFiltered.map(d => {
+        const venue = (live.results||[]).find(r=>r.date===d.date)?.venue || '';
+        const raceNum = (live.results||[]).find(r=>r.date===d.date)?.race_number || '';
+        return `<tr><td>${d.date}</td><td>${venue ? `<span class="venue-tag ${vcJRA[venue]||''}">${venue}</span>` : '-'}</td><td style="text-align:center">${raceNum||'-'}</td><td class="${d.quinella_hits>0?'result-hit':'result-miss'}" style="text-align:center">${d.quinella_hits}</td><td class="${d.exacta_hits>0?'result-hit':'result-miss'}" style="text-align:center">${d.exacta_hits}</td><td class="payout">${fmt(d.cost)}円</td><td class="payout">${fmt(d.total_payout)}円</td><td class="payout ${pnlClass(d.pnl)}">${d.pnl>=0?'+':''}${fmt(d.pnl)}円</td></tr>`;
+      }).join('');
+    }
   }
 }
 
