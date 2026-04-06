@@ -205,7 +205,7 @@ a { color: var(--blue); text-decoration: none; }
 <div id="tab-central" class="page-content active">
   <section class="hero">
     <div class="hero-inner">
-      <div class="hero-title">JRA 中央競馬 実運用成績</div>
+      <div class="hero-title">実運用成績 <span class="badge badge-live" style="margin-left:8px;">LIVE</span></div>
       <div class="kpi-grid" id="c-kpi"></div>
     </div>
   </section>
@@ -361,9 +361,9 @@ function renderCentral(data) {
     const dates = (live.results||[]).map(r=>r.date).filter(Boolean);
     const dateRange = dates.length ? dates[0] + ' 〜 ' + dates[dates.length-1] : '';
     document.getElementById('c-kpi').innerHTML = `
-      <div class="kpi-card"><div class="kpi-label">実運用ベット数</div><div class="kpi-value">${nr}<span class="unit">レース</span></div><div class="kpi-sub">${dateRange}</div></div>
-      <div class="kpi-card"><div class="kpi-label">ROI（馬連+馬単）</div><div class="kpi-value ${roiClass(totalRoi)}">${totalRoi}<span class="unit">%</span></div><div class="kpi-sub">投資: ${fmt(totalCost)}円</div></div>
-      <div class="kpi-card"><div class="kpi-label">的中率</div><div class="kpi-value">${hitRate}<span class="unit">%</span></div><div class="kpi-sub">${totalHits}/${totalBets} 的中（馬連+馬単）</div></div>
+      <div class="kpi-card"><div class="kpi-label">ベット数</div><div class="kpi-value">${fmt(totalBets)}<span class="unit">件</span></div><div class="kpi-sub">${dateRange}</div></div>
+      <div class="kpi-card"><div class="kpi-label">ROI</div><div class="kpi-value ${roiClass(totalRoi)}">${totalRoi}<span class="unit">%</span></div><div class="kpi-sub">投資: ${fmt(totalCost)}円</div></div>
+      <div class="kpi-card"><div class="kpi-label">的中率</div><div class="kpi-value">${hitRate}<span class="unit">%</span></div><div class="kpi-sub">${totalHits}/${totalBets} 的中</div></div>
       <div class="kpi-card"><div class="kpi-label">累積損益</div><div class="kpi-value ${pnlClass(totalPnl)}">${totalPnl>=0?'+':''}${fmt(totalPnl)}<span class="unit">円</span></div><div class="kpi-sub">回収: ${fmt(totalReturn)}円</div></div>`;
   } else {
     const s = data.summary, p = data.period;
