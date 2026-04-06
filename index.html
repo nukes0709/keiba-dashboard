@@ -281,37 +281,21 @@ a { color: var(--blue); text-decoration: none; }
 <div id="tab-local" class="page-content">
   <section class="hero">
     <div class="hero-inner">
-      <div class="hero-title">地方競馬 10戦略ポートフォリオ</div>
+      <div class="hero-title">地方競馬 実運用成績 <span class="badge badge-live" style="margin-left:8px;">LIVE</span></div>
       <div class="kpi-grid" id="l-kpi"></div>
     </div>
   </section>
   <div class="container" style="padding-top:36px;">
-    <section class="section" id="l-live-section" style="display:none;">
-      <div class="section-header"><h2 class="section-title">実運用成績</h2><span class="badge badge-live">LIVE</span></div>
-      <div class="kpi-grid" id="l-live-kpi" style="grid-template-columns:repeat(4,1fr);gap:14px;"></div>
+    <section class="section" id="l-daily-section" style="display:none;">
+      <div class="section-header"><h2 class="section-title">日別成績</h2></div>
+      <div class="race-table-wrap"><div class="table-scroll">
+        <table class="race-table"><thead><tr><th>日付</th><th>ベット数</th><th>的中</th><th>投資</th><th>回収</th><th>損益</th></tr></thead>
+        <tbody id="l-daily"></tbody></table>
+      </div></div>
     </section>
-    <section class="section">
-      <div class="section-header"><h2 class="section-title">月次ROI推移</h2></div>
-      <div class="chart-wrap"><canvas id="l-monthly-chart" height="280"></canvas></div>
-    </section>
-    <section class="section">
-      <div class="section-header"><h2 class="section-title">累積損益</h2></div>
-      <div class="chart-wrap"><canvas id="l-cum-chart" height="250"></canvas></div>
-    </section>
-    <section class="section" id="l-strat-section">
+    <section class="section" id="l-strat-section" style="display:none;">
       <div class="section-header"><h2 class="section-title">戦略別成績</h2></div>
       <div class="strat-grid" id="l-strategies"></div>
-    </section>
-    <section class="section">
-      <div class="section-header"><h2 class="section-title">会場別ROI</h2></div>
-      <div class="venue-grid" id="l-venues" style="grid-template-columns:repeat(6,1fr);"></div>
-    </section>
-    <section class="section" id="l-history-section" style="display:none;">
-      <div class="section-header"><h2 class="section-title">直近のレース結果</h2></div>
-      <div class="race-table-wrap"><div class="table-scroll">
-        <table class="race-table"><thead><tr><th>日付</th><th>会場</th><th>戦略数</th><th>投資</th><th>回収</th><th>損益</th></tr></thead>
-        <tbody id="l-history"></tbody></table>
-      </div></div>
     </section>
   </div>
 </div>
@@ -433,72 +417,35 @@ function renderCentral(data) {
 // ===== 地方競馬 =====
 function renderLocal(data) {
   if (!data) {
-    document.getElementById('l-kpi').innerHTML = '<div class="kpi-card" style="grid-column:span 4;text-align:center;padding:40px;"><div class="kpi-label">地方競馬データなし</div><div style="color:var(--gray-400);margin-top:8px;">keiba プロジェクトの dashboard/data/ にデータを配置してください</div></div>';
+    document.getElementById('l-kpi').innerHTML = '<div class="kpi-card" style="grid-column:span 4;text-align:center;padding:40px;"><div class="kpi-label">地方競馬データなし</div></div>';
     return;
   }
 
-  const perf = data.performance;
   const live = data.live;
-  const hist = data.history;
-
-  if (perf) {
-    const ps = perf.portfolio_summary;
-    const pp = perf.period;
-    document.getElementById('l-kpi').innerHTML = `
-      <div class="kpi-card"><div class="kpi-label">分析ベット数</div><div class="kpi-value">${fmt(pp.total_bets)}<span class="unit">件</span></div><div class="kpi-sub">${pp.start} 〜 ${pp.end}</div></div>
-      <div class="kpi-card"><div class="kpi-label">ROI</div><div class="kpi-value ${roiClass(ps.roi)}">${ps.roi}<span class="unit">%</span></div><div class="kpi-sub">投資: ${fmt(ps.total_cost)}円</div></div>
-      <div class="kpi-card"><div class="kpi-label">戦略数</div><div class="kpi-value">${ps.n_strategies}<span class="unit">戦略</span></div><div class="kpi-sub">10戦略ポートフォリオ</div></div>
-      <div class="kpi-card"><div class="kpi-label">累積損益</div><div class="kpi-value ${pnlClass(ps.profit)}">${ps.profit>=0?'+':''}${fmt(ps.profit)}<span class="unit">円</span></div><div class="kpi-sub">回収: ${fmt(ps.total_return)}円</div></div>`;
-
-    if (perf.monthly && perf.monthly.length) {
-      makeChart('l-monthly-chart', 'bar', perf.monthly.map(m=>m.month), [{
-        data: perf.monthly.map(m=>m.roi),
-        backgroundColor: perf.monthly.map(m=>m.roi>=100?'rgba(34,197,94,.6)':'rgba(239,68,68,.5)'),
-        borderRadius: 6, borderSkipped: false,
-      }], { scales: { y:{beginAtZero:false,grid:{color:'rgba(0,0,0,.04)'},ticks:{callback:v=>v+'%'}}, x:{grid:{display:false}} } });
-
-      makeChart('l-cum-chart', 'line', perf.monthly.map(m=>m.month), [{
-        data: perf.monthly.map(m=>m.cum_pnl),
-        borderColor:'#22c55e', backgroundColor:'rgba(34,197,94,.1)', fill:true, tension:.3, pointRadius:4, pointBackgroundColor:'#22c55e',
-      }], { scales: { y:{grid:{color:'rgba(0,0,0,.04)'},ticks:{callback:v=>(v>=0?'+':'')+fmt(v)+'円'}}, x:{grid:{display:false}} } });
-    }
-
-    if (perf.strategies && perf.strategies.length) {
-      document.getElementById('l-strategies').innerHTML = perf.strategies.map(st => {
-        const chartId = 'strat-' + st.name.replace(/[^a-zA-Z0-9]/g, '_');
-        return `<div class="strat-card"><div class="strat-top"><div class="strat-name">${st.name}</div></div><div class="strat-metrics"><div class="strat-metric"><div class="strat-metric-val ${roiClass(st.roi)}">${st.roi}%</div><div class="strat-metric-lbl">ROI</div></div><div class="strat-metric"><div class="strat-metric-val">${st.hit_rate}%</div><div class="strat-metric-lbl">的中率</div></div><div class="strat-metric"><div class="strat-metric-val">${st.n_bets}</div><div class="strat-metric-lbl">ベット数</div></div></div><div class="strat-chart"><canvas id="${chartId}"></canvas></div></div>`;
-      }).join('');
-      // Render mini charts
-      perf.strategies.forEach(st => {
-        const chartId = 'strat-' + st.name.replace(/[^a-zA-Z0-9]/g, '_');
-        if (st.monthly && st.monthly.length) {
-          makeChart(chartId, 'line', st.monthly.map(m=>m.month), [{
-            data: st.monthly.map(m=>m.cum_pnl),
-            borderColor: st.roi >= 100 ? '#22c55e' : '#ef4444',
-            backgroundColor: st.roi >= 100 ? 'rgba(34,197,94,.08)' : 'rgba(239,68,68,.08)',
-            fill: true, tension: .3, pointRadius: 2, borderWidth: 2,
-          }], { scales: { y:{display:false}, x:{display:false} }, plugins:{legend:{display:false},tooltip:{enabled:false}} });
-        }
-      });
-    }
-
-    if (perf.venues && perf.venues.length)
-      document.getElementById('l-venues').innerHTML = perf.venues.map(v=>`<div class="venue-card"><div class="venue-card-name"><span class="venue-tag ${vcLocal[v.venue]||''}">${v.venue}</span></div><div class="venue-card-roi ${roiClass(v.roi)}">${v.roi}%</div><div class="venue-card-sub">${v.n_bets}件 / ${v.profit>=0?'+':''}${fmt(v.profit)}円</div></div>`).join('');
-  }
 
   if (live && live.status === 'live') {
     const ls = live.summary;
-    document.getElementById('l-live-section').style.display = '';
-    document.getElementById('l-live-kpi').innerHTML = `
-      <div class="card" style="padding:18px;text-align:center;"><div style="font-size:10px;color:var(--gray-500);letter-spacing:.5px;margin-bottom:6px;">ベット数</div><div style="font-family:var(--font-num);font-size:22px;font-weight:700;">${ls.n_bets}</div></div>
-      <div class="card" style="padding:18px;text-align:center;"><div style="font-size:10px;color:var(--gray-500);letter-spacing:.5px;margin-bottom:6px;">ROI</div><div style="font-family:var(--font-num);font-size:22px;font-weight:700;" class="${roiClass(ls.roi)}">${ls.roi}%</div></div>
-      <div class="card" style="padding:18px;text-align:center;"><div style="font-size:10px;color:var(--gray-500);letter-spacing:.5px;margin-bottom:6px;">的中率</div><div style="font-family:var(--font-num);font-size:22px;font-weight:700;">${ls.hit_rate}%</div></div>
-      <div class="card" style="padding:18px;text-align:center;"><div style="font-size:10px;color:var(--gray-500);letter-spacing:.5px;margin-bottom:6px;">損益</div><div style="font-family:var(--font-num);font-size:22px;font-weight:700;" class="${pnlClass(ls.profit)}">${ls.profit>=0?'+':''}${fmt(ls.profit)}円</div></div>`;
-  }
+    document.getElementById('l-kpi').innerHTML = `
+      <div class="kpi-card"><div class="kpi-label">ベット数</div><div class="kpi-value">${fmt(ls.n_bets)}<span class="unit">件</span></div><div class="kpi-sub">${ls.start_date} 〜 ${ls.end_date}（${ls.n_days}日間）</div></div>
+      <div class="kpi-card"><div class="kpi-label">ROI</div><div class="kpi-value ${roiClass(ls.roi)}">${ls.roi}<span class="unit">%</span></div><div class="kpi-sub">投資: ${fmt(ls.total_cost)}円</div></div>
+      <div class="kpi-card"><div class="kpi-label">的中率</div><div class="kpi-value">${ls.hit_rate}<span class="unit">%</span></div><div class="kpi-sub">${ls.n_hits}/${ls.n_bets} 的中</div></div>
+      <div class="kpi-card"><div class="kpi-label">累積損益</div><div class="kpi-value ${pnlClass(ls.profit)}">${ls.profit>=0?'+':''}${fmt(ls.profit)}<span class="unit">円</span></div><div class="kpi-sub">回収: ${fmt(ls.total_return)}円</div></div>`;
 
-  if (hist && hist.races && hist.races.length) {
-    document.getElementById('l-history-section').style.display = '';
-    document.getElementById('l-history').innerHTML = hist.races.slice(0, 80).map(r=>`<tr><td>${r.date}</td><td><span class="venue-tag ${vcLocal[r.venue]||''}">${r.venue}</span></td><td style="text-align:center">${r.n_strategies}</td><td class="payout">${fmt(r.total_cost)}円</td><td class="payout">${fmt(r.total_return)}円</td><td class="payout ${pnlClass(r.total_pnl)}">${r.total_pnl>=0?'+':''}${fmt(r.total_pnl)}円</td></tr>`).join('');
+    // 日別成績
+    if (live.daily && live.daily.length) {
+      document.getElementById('l-daily-section').style.display = '';
+      document.getElementById('l-daily').innerHTML = live.daily.map(d=>`<tr><td>${d.date}</td><td style="text-align:center">${d.n_bets}</td><td class="${d.hits>0?'result-hit':'result-miss'}" style="text-align:center">${d.hits}</td><td class="payout">${fmt(d.cost)}円</td><td class="payout">${fmt(d['return'])}円</td><td class="payout ${pnlClass(d.pnl)}">${d.pnl>=0?'+':''}${fmt(d.pnl)}円</td></tr>`).join('');
+    }
+
+    // 戦略別成績
+    if (live.strategies && live.strategies.length) {
+      document.getElementById('l-strat-section').style.display = '';
+      document.getElementById('l-strategies').innerHTML = live.strategies.map(st =>
+        `<div class="strat-card"><div class="strat-top"><div class="strat-name">${st.strategy}</div></div><div class="strat-metrics"><div class="strat-metric"><div class="strat-metric-val ${roiClass(st.roi)}">${st.roi}%</div><div class="strat-metric-lbl">ROI</div></div><div class="strat-metric"><div class="strat-metric-val">${st.hits}/${st.n_bets}</div><div class="strat-metric-lbl">的中</div></div><div class="strat-metric"><div class="strat-metric-val ${pnlClass(st.profit)}">${st.profit>=0?'+':''}${fmt(st.profit)}</div><div class="strat-metric-lbl">損益</div></div></div></div>`
+      ).join('');
+    }
+  } else {
+    document.getElementById('l-kpi').innerHTML = '<div class="kpi-card" style="grid-column:span 4;text-align:center;padding:40px;"><div class="kpi-label">実運用データなし</div><div style="color:var(--gray-400);margin-top:8px;">日次バッチ開始後に蓄積されます</div></div>';
   }
 }
 
