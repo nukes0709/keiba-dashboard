@@ -205,35 +205,14 @@ a { color: var(--blue); text-decoration: none; }
 <div id="tab-central" class="page-content active">
   <section class="hero">
     <div class="hero-inner">
-      <div class="hero-title">JRA 中央競馬 バックテスト成績</div>
+      <div class="hero-title">JRA 中央競馬 実運用成績</div>
       <div class="kpi-grid" id="c-kpi"></div>
     </div>
   </section>
   <div class="container" style="padding-top:36px;">
-    <section class="section">
-      <div class="section-header"><h2 class="section-title">月次ROI推移</h2></div>
-      <div class="chart-wrap"><canvas id="c-monthly-chart" height="280"></canvas></div>
-    </section>
-    <section class="section">
-      <div class="section-header"><h2 class="section-title">累積損益</h2></div>
-      <div class="chart-wrap"><canvas id="c-cum-chart" height="250"></canvas></div>
-    </section>
-    <section class="section" id="c-ev-section">
-      <div class="section-header"><h2 class="section-title">EV帯別成績</h2></div>
-      <div class="ev-grid" id="c-ev-bands"></div>
-    </section>
-    <section class="section" id="c-splits-section" style="display:none;">
-      <div class="section-header"><h2 class="section-title">ウォークフォワード スプリット別</h2></div>
-      <div class="split-grid" id="c-splits"></div>
-    </section>
-    <section class="section">
-      <div class="section-header"><h2 class="section-title">会場別ROI</h2></div>
-      <div class="venue-grid" id="c-venues"></div>
-    </section>
-
-    <!-- 実運用セクション -->
+    <!-- 実運用セクション（メイン） -->
     <section class="section" id="c-live-section" style="display:none;">
-      <div class="section-header"><h2 class="section-title">実運用成績</h2><span class="badge badge-live">LIVE</span></div>
+      <div class="section-header"><h2 class="section-title">馬券種別成績</h2><span class="badge badge-live">LIVE</span></div>
       <div class="bet-type-grid" id="c-bet-types"></div>
     </section>
     <section class="section" id="c-live-daily-section" style="display:none;">
@@ -258,13 +237,43 @@ a { color: var(--blue); text-decoration: none; }
       </div></div>
     </section>
 
-    <section class="section">
-      <div class="section-header"><h2 class="section-title">バックテスト ベット履歴</h2><span class="badge badge-live">BACKTEST</span></div>
-      <div class="race-table-wrap"><div class="table-scroll">
-        <table class="race-table"><thead><tr><th>日付</th><th>会場</th><th>馬名</th><th>馬番</th><th>人気</th><th>予測確率</th><th>推定Odds</th><th>EV</th><th>賭金</th><th>結果</th><th>払戻</th></tr></thead>
-        <tbody id="c-history"></tbody></table>
-      </div></div>
-    </section>
+    <!-- バックテスト（折りたたみ） -->
+    <details class="section" style="margin-bottom:40px;">
+      <summary style="cursor:pointer;font-size:17px;font-weight:700;display:flex;align-items:center;gap:10px;padding:12px 0;user-select:none;">
+        <span style="width:3px;height:20px;background:linear-gradient(180deg,var(--gray-400),var(--gray-500));border-radius:2px;flex-shrink:0;"></span>
+        バックテスト参考データ
+        <span style="font-size:12px;font-weight:500;color:var(--gray-500);margin-left:4px;">（クリックで展開）</span>
+      </summary>
+      <div style="padding-top:20px;">
+        <section class="section">
+          <div class="section-header"><h2 class="section-title">月次ROI推移</h2></div>
+          <div class="chart-wrap"><canvas id="c-monthly-chart" height="280"></canvas></div>
+        </section>
+        <section class="section">
+          <div class="section-header"><h2 class="section-title">累積損益</h2></div>
+          <div class="chart-wrap"><canvas id="c-cum-chart" height="250"></canvas></div>
+        </section>
+        <section class="section" id="c-ev-section">
+          <div class="section-header"><h2 class="section-title">EV帯別成績</h2></div>
+          <div class="ev-grid" id="c-ev-bands"></div>
+        </section>
+        <section class="section" id="c-splits-section" style="display:none;">
+          <div class="section-header"><h2 class="section-title">ウォークフォワード スプリット別</h2></div>
+          <div class="split-grid" id="c-splits"></div>
+        </section>
+        <section class="section">
+          <div class="section-header"><h2 class="section-title">会場別ROI</h2></div>
+          <div class="venue-grid" id="c-venues"></div>
+        </section>
+        <section class="section">
+          <div class="section-header"><h2 class="section-title">バックテスト ベット履歴</h2><span class="badge badge-live">BACKTEST</span></div>
+          <div class="race-table-wrap"><div class="table-scroll">
+            <table class="race-table"><thead><tr><th>日付</th><th>会場</th><th>馬名</th><th>馬番</th><th>人気</th><th>予測確率</th><th>推定Odds</th><th>EV</th><th>賭金</th><th>結果</th><th>払戻</th></tr></thead>
+            <tbody id="c-history"></tbody></table>
+          </div></div>
+        </section>
+      </div>
+    </details>
   </div>
 </div>
 
@@ -341,12 +350,33 @@ function renderCentral(data) {
   if (!data) return;
   document.getElementById('update-badge').textContent = data.generated_at ? data.generated_at.slice(0,16).replace('T',' ') : '--';
 
-  const s = data.summary, p = data.period;
-  document.getElementById('c-kpi').innerHTML = `
-    <div class="kpi-card"><div class="kpi-label">分析ベット数</div><div class="kpi-value">${fmt(p.total_bets)}<span class="unit">件</span></div><div class="kpi-sub">${p.start} 〜 ${p.end}</div></div>
-    <div class="kpi-card"><div class="kpi-label">ROI</div><div class="kpi-value ${roiClass(s.roi)}">${s.roi}<span class="unit">%</span></div><div class="kpi-sub">投資: ${fmt(s.total_bet)}円</div></div>
-    <div class="kpi-card"><div class="kpi-label">的中率</div><div class="kpi-value">${s.hit_rate}<span class="unit">%</span></div><div class="kpi-sub">${s.n_wins}/${p.total_bets} 的中</div></div>
-    <div class="kpi-card"><div class="kpi-label">累積損益</div><div class="kpi-value ${pnlClass(s.profit)}">${s.profit>=0?'+':''}${fmt(s.profit)}<span class="unit">円</span></div><div class="kpi-sub">回収: ${fmt(s.total_return)}円</div></div>`;
+  // 実運用データがあればヒーローKPIに表示、なければバックテスト
+  const live = data.live;
+  if (live && live.status === 'live' && live.summary && live.summary.n_bets > 0) {
+    const ls = live.summary;
+    const nr = ls.n_bets;
+    const totalCost = (ls.quinella.cost||0) + (ls.exacta.cost||0);
+    const totalReturn = (ls.quinella.return||0) + (ls.exacta.return||0);
+    const totalPnl = totalReturn - totalCost;
+    const totalRoi = totalCost > 0 ? Math.round(totalReturn / totalCost * 1000) / 10 : 0;
+    const totalHits = (ls.quinella.hits||0) + (ls.exacta.hits||0);
+    const totalBets = nr * 2;
+    const hitRate = totalBets > 0 ? Math.round(totalHits / totalBets * 1000) / 10 : 0;
+    const dates = (live.results||[]).map(r=>r.date).filter(Boolean);
+    const dateRange = dates.length ? dates[0] + ' 〜 ' + dates[dates.length-1] : '';
+    document.getElementById('c-kpi').innerHTML = `
+      <div class="kpi-card"><div class="kpi-label">実運用ベット数</div><div class="kpi-value">${nr}<span class="unit">レース</span></div><div class="kpi-sub">${dateRange}</div></div>
+      <div class="kpi-card"><div class="kpi-label">ROI（馬連+馬単）</div><div class="kpi-value ${roiClass(totalRoi)}">${totalRoi}<span class="unit">%</span></div><div class="kpi-sub">投資: ${fmt(totalCost)}円</div></div>
+      <div class="kpi-card"><div class="kpi-label">的中率</div><div class="kpi-value">${hitRate}<span class="unit">%</span></div><div class="kpi-sub">${totalHits}/${totalBets} 的中（馬連+馬単）</div></div>
+      <div class="kpi-card"><div class="kpi-label">累積損益</div><div class="kpi-value ${pnlClass(totalPnl)}">${totalPnl>=0?'+':''}${fmt(totalPnl)}<span class="unit">円</span></div><div class="kpi-sub">回収: ${fmt(totalReturn)}円</div></div>`;
+  } else {
+    const s = data.summary, p = data.period;
+    document.getElementById('c-kpi').innerHTML = `
+      <div class="kpi-card"><div class="kpi-label">分析ベット数</div><div class="kpi-value">${fmt(p.total_bets)}<span class="unit">件</span></div><div class="kpi-sub">${p.start} 〜 ${p.end}</div></div>
+      <div class="kpi-card"><div class="kpi-label">ROI</div><div class="kpi-value ${roiClass(s.roi)}">${s.roi}<span class="unit">%</span></div><div class="kpi-sub">投資: ${fmt(s.total_bet)}円</div></div>
+      <div class="kpi-card"><div class="kpi-label">的中率</div><div class="kpi-value">${s.hit_rate}<span class="unit">%</span></div><div class="kpi-sub">${s.n_wins}/${p.total_bets} 的中</div></div>
+      <div class="kpi-card"><div class="kpi-label">累積損益</div><div class="kpi-value ${pnlClass(s.profit)}">${s.profit>=0?'+':''}${fmt(s.profit)}<span class="unit">円</span></div><div class="kpi-sub">回収: ${fmt(s.total_return)}円</div></div>`;
+  }
 
   if (data.monthly && data.monthly.length) {
     makeChart('c-monthly-chart', 'bar', data.monthly.map(m=>m.month), [{
@@ -372,8 +402,7 @@ function renderCentral(data) {
   if (data.venues && data.venues.length)
     document.getElementById('c-venues').innerHTML = data.venues.map(v=>`<div class="venue-card"><div class="venue-card-name"><span class="venue-tag ${vcJRA[v.venue]||''}">${v.venue}</span></div><div class="venue-card-roi ${roiClass(v.roi)}">${v.roi}%</div><div class="venue-card-sub">${v.n_bets}件 / ${v.profit>=0?'+':''}${fmt(v.profit)}円</div></div>`).join('');
 
-  // 実運用
-  const live = data.live;
+  // 実運用セクション詳細
   if (live && live.status === 'live') {
     const ls = live.summary;
     document.getElementById('c-live-section').style.display = '';
