@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-03-28T01:20:41.908624",
+  "status": "live",
+  "summary": {
+    "n_bets": 1,
+    "quinella": {
+      "hits": 0,
+      "hit_rate": 0.0,
+      "cost": 100,
+      "return": 0,
+      "roi": 0.0,
+      "pnl": -100
+    },
+    "exacta": {
+      "hits": 0,
+      "hit_rate": 0.0,
+      "cost": 100,
+      "return": 0,
+      "roi": 0.0,
+      "pnl": -100
+    }
+  },
+  "results": [
+    {
+      "date": "2026-03-15",
+      "race_id": "202609010811",
+      "venue": "阪神",
+      "race_number": 11,
+      "surface": "芝",
+      "distance": 1200,
+      "pick1": 9,
+      "pick2": 8,
+      "pick1_name": "ジョーメッドヴィン",
+      "pick2_name": "アスクワンタイム",
+      "ev": 1.21,
+      "pick1_pos": "9",
+      "pick2_pos": "3",
+      "quinella_hit": false,
+      "quinella_payout": 0,
+      "exacta_hit": false,
+      "exacta_payout": 0
+    }
+  ],
+  "pending": [],
+  "daily": [
+    {
+      "date": "2026-03-15",
+      "n_bets": 1,
+      "quinella_hits": 0,
+      "exacta_hits": 0,
+      "quinella_payout": 0,
+      "exacta_payout": 0,
+      "cost": 200,
+      "total_payout": 0,
+      "pnl": -200
+    }
+  ]
+}

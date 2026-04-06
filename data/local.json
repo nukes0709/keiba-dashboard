@@ -1,0 +1,6390 @@
+{
+  "performance": {
+    "generated_at": "2026-04-06T23:33:45.078538",
+    "type": "backtest",
+    "period": {
+      "start": "2025-01-01",
+      "end": "2026-04-06",
+      "total_bets": 2994
+    },
+    "portfolio_summary": {
+      "total_cost": 442900,
+      "total_return": 486060,
+      "profit": 43160,
+      "roi": 109.7,
+      "n_strategies": 13
+    },
+    "monthly": [
+      {
+        "month": "2025-01",
+        "n_bets": 230,
+        "cost": 31400,
+        "return": 30310,
+        "pnl": -1090,
+        "cum_pnl": -1090,
+        "roi": 96.5,
+        "hits": 26,
+        "hit_rate": 11.3
+      },
+      {
+        "month": "2025-02",
+        "n_bets": 173,
+        "cost": 26200,
+        "return": 25210,
+        "pnl": -990,
+        "cum_pnl": -2080,
+        "roi": 96.2,
+        "hits": 26,
+        "hit_rate": 15.0
+      },
+      {
+        "month": "2025-03",
+        "n_bets": 226,
+        "cost": 32500,
+        "return": 27760,
+        "pnl": -4740,
+        "cum_pnl": -6820,
+        "roi": 85.4,
+        "hits": 16,
+        "hit_rate": 7.1
+      },
+      {
+        "month": "2025-04",
+        "n_bets": 209,
+        "cost": 33300,
+        "return": 40560,
+        "pnl": 7260,
+        "cum_pnl": 440,
+        "roi": 121.8,
+        "hits": 31,
+        "hit_rate": 14.8
+      },
+      {
+        "month": "2025-05",
+        "n_bets": 197,
+        "cost": 30700,
+        "return": 48460,
+        "pnl": 17760,
+        "cum_pnl": 18200,
+        "roi": 157.9,
+        "hits": 31,
+        "hit_rate": 15.7
+      },
+      {
+        "month": "2025-06",
+        "n_bets": 201,
+        "cost": 29900,
+        "return": 39170,
+        "pnl": 9270,
+        "cum_pnl": 27470,
+        "roi": 131.0,
+        "hits": 31,
+        "hit_rate": 15.4
+      },
+      {
+        "month": "2025-07",
+        "n_bets": 231,
+        "cost": 33900,
+        "return": 53840,
+        "pnl": 19940,
+        "cum_pnl": 47410,
+        "roi": 158.8,
+        "hits": 45,
+        "hit_rate": 19.5
+      },
+      {
+        "month": "2025-08",
+        "n_bets": 150,
+        "cost": 23200,
+        "return": 31680,
+        "pnl": 8480,
+        "cum_pnl": 55890,
+        "roi": 136.6,
+        "hits": 19,
+        "hit_rate": 12.7
+      },
+      {
+        "month": "2025-09",
+        "n_bets": 212,
+        "cost": 31900,
+        "return": 15370,
+        "pnl": -16530,
+        "cum_pnl": 39360,
+        "roi": 48.2,
+        "hits": 24,
+        "hit_rate": 11.3
+      },
+      {
+        "month": "2025-10",
+        "n_bets": 228,
+        "cost": 34200,
+        "return": 29700,
+        "pnl": -4500,
+        "cum_pnl": 34860,
+        "roi": 86.8,
+        "hits": 27,
+        "hit_rate": 11.8
+      },
+      {
+        "month": "2025-11",
+        "n_bets": 152,
+        "cost": 24200,
+        "return": 13680,
+        "pnl": -10520,
+        "cum_pnl": 24340,
+        "roi": 56.5,
+        "hits": 17,
+        "hit_rate": 11.2
+      },
+      {
+        "month": "2025-12",
+        "n_bets": 241,
+        "cost": 34500,
+        "return": 41930,
+        "pnl": 7430,
+        "cum_pnl": 31770,
+        "roi": 121.5,
+        "hits": 40,
+        "hit_rate": 16.6
+      },
+      {
+        "month": "2026-01",
+        "n_bets": 242,
+        "cost": 33800,
+        "return": 45080,
+        "pnl": 11280,
+        "cum_pnl": 43050,
+        "roi": 133.4,
+        "hits": 43,
+        "hit_rate": 17.8
+      },
+      {
+        "month": "2026-02",
+        "n_bets": 171,
+        "cost": 26300,
+        "return": 24360,
+        "pnl": -1940,
+        "cum_pnl": 41110,
+        "roi": 92.6,
+        "hits": 34,
+        "hit_rate": 19.9
+      },
+      {
+        "month": "2026-03",
+        "n_bets": 110,
+        "cost": 14600,
+        "return": 18670,
+        "pnl": 4070,
+        "cum_pnl": 45180,
+        "roi": 127.9,
+        "hits": 18,
+        "hit_rate": 16.4
+      },
+      {
+        "month": "2026-04",
+        "n_bets": 21,
+        "cost": 2300,
+        "return": 280,
+        "pnl": -2020,
+        "cum_pnl": 43160,
+        "roi": 12.2,
+        "hits": 1,
+        "hit_rate": 4.8
+      }
+    ],
+    "strategies": [
+      {
+        "name": "浦和中長_win_3連単BOX3",
+        "n_bets": 90,
+        "cost": 54000,
+        "total_return": 80600,
+        "profit": 26600,
+        "roi": 149.3,
+        "hit_rate": 14.4,
+        "max_dd": -12200,
+        "months_positive": 9,
+        "months_total": 15,
+        "monthly": [
+          {
+            "month": "2025-01",
+            "n_bets": 4,
+            "cost": 2400,
+            "pnl": 5730,
+            "cum_pnl": 5730,
+            "roi": 338.8
+          },
+          {
+            "month": "2025-02",
+            "n_bets": 6,
+            "cost": 3600,
+            "pnl": 50,
+            "cum_pnl": 5780,
+            "roi": 101.4
+          },
+          {
+            "month": "2025-03",
+            "n_bets": 5,
+            "cost": 3000,
+            "pnl": 9100,
+            "cum_pnl": 14880,
+            "roi": 403.3
+          },
+          {
+            "month": "2025-04",
+            "n_bets": 8,
+            "cost": 4800,
+            "pnl": 5470,
+            "cum_pnl": 20350,
+            "roi": 214.0
+          },
+          {
+            "month": "2025-05",
+            "n_bets": 7,
+            "cost": 4200,
+            "pnl": 2780,
+            "cum_pnl": 23130,
+            "roi": 166.2
+          },
+          {
+            "month": "2025-06",
+            "n_bets": 6,
+            "cost": 3600,
+            "pnl": -3600,
+            "cum_pnl": 19530,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-07",
+            "n_bets": 8,
+            "cost": 4800,
+            "pnl": 6940,
+            "cum_pnl": 26470,
+            "roi": 244.6
+          },
+          {
+            "month": "2025-08",
+            "n_bets": 5,
+            "cost": 3000,
+            "pnl": 6330,
+            "cum_pnl": 32800,
+            "roi": 311.0
+          },
+          {
+            "month": "2025-09",
+            "n_bets": 6,
+            "cost": 3600,
+            "pnl": -3600,
+            "cum_pnl": 29200,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-10",
+            "n_bets": 7,
+            "cost": 4200,
+            "pnl": -4200,
+            "cum_pnl": 25000,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-11",
+            "n_bets": 7,
+            "cost": 4200,
+            "pnl": -1400,
+            "cum_pnl": 23600,
+            "roi": 66.7
+          },
+          {
+            "month": "2025-12",
+            "n_bets": 6,
+            "cost": 3600,
+            "pnl": 3750,
+            "cum_pnl": 27350,
+            "roi": 204.2
+          },
+          {
+            "month": "2026-01",
+            "n_bets": 7,
+            "cost": 4200,
+            "pnl": 650,
+            "cum_pnl": 28000,
+            "roi": 115.5
+          },
+          {
+            "month": "2026-02",
+            "n_bets": 7,
+            "cost": 4200,
+            "pnl": -800,
+            "cum_pnl": 27200,
+            "roi": 81.0
+          },
+          {
+            "month": "2026-03",
+            "n_bets": 1,
+            "cost": 600,
+            "pnl": -600,
+            "cum_pnl": 26600,
+            "roi": 0.0
+          }
+        ]
+      },
+      {
+        "name": "船橋マイル_reg_3連単1点",
+        "n_bets": 281,
+        "cost": 28100,
+        "total_return": 38130,
+        "profit": 10030,
+        "roi": 135.7,
+        "hit_rate": 5.7,
+        "max_dd": -6200,
+        "months_positive": 5,
+        "months_total": 16,
+        "monthly": [
+          {
+            "month": "2025-01",
+            "n_bets": 21,
+            "cost": 2100,
+            "pnl": -2100,
+            "cum_pnl": -2100,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-02",
+            "n_bets": 22,
+            "cost": 2200,
+            "pnl": 6430,
+            "cum_pnl": 4330,
+            "roi": 392.3
+          },
+          {
+            "month": "2025-03",
+            "n_bets": 25,
+            "cost": 2500,
+            "pnl": -1200,
+            "cum_pnl": 3130,
+            "roi": 52.0
+          },
+          {
+            "month": "2025-04",
+            "n_bets": 16,
+            "cost": 1600,
+            "pnl": 2890,
+            "cum_pnl": 6020,
+            "roi": 280.6
+          },
+          {
+            "month": "2025-05",
+            "n_bets": 20,
+            "cost": 2000,
+            "pnl": 1830,
+            "cum_pnl": 7850,
+            "roi": 191.5
+          },
+          {
+            "month": "2025-06",
+            "n_bets": 22,
+            "cost": 2200,
+            "pnl": -1380,
+            "cum_pnl": 6470,
+            "roi": 37.3
+          },
+          {
+            "month": "2025-07",
+            "n_bets": 27,
+            "cost": 2700,
+            "pnl": -230,
+            "cum_pnl": 6240,
+            "roi": 91.5
+          },
+          {
+            "month": "2025-08",
+            "n_bets": 19,
+            "cost": 1900,
+            "pnl": 9690,
+            "cum_pnl": 15930,
+            "roi": 610.0
+          },
+          {
+            "month": "2025-09",
+            "n_bets": 6,
+            "cost": 600,
+            "pnl": -600,
+            "cum_pnl": 15330,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-10",
+            "n_bets": 11,
+            "cost": 1100,
+            "pnl": -1100,
+            "cum_pnl": 14230,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-11",
+            "n_bets": 17,
+            "cost": 1700,
+            "pnl": -960,
+            "cum_pnl": 13270,
+            "roi": 43.5
+          },
+          {
+            "month": "2025-12",
+            "n_bets": 18,
+            "cost": 1800,
+            "pnl": 810,
+            "cum_pnl": 14080,
+            "roi": 145.0
+          },
+          {
+            "month": "2026-01",
+            "n_bets": 19,
+            "cost": 1900,
+            "pnl": -1330,
+            "cum_pnl": 12750,
+            "roi": 30.0
+          },
+          {
+            "month": "2026-02",
+            "n_bets": 20,
+            "cost": 2000,
+            "pnl": -920,
+            "cum_pnl": 11830,
+            "roi": 54.0
+          },
+          {
+            "month": "2026-03",
+            "n_bets": 7,
+            "cost": 700,
+            "pnl": -700,
+            "cum_pnl": 11130,
+            "roi": 0.0
+          },
+          {
+            "month": "2026-04",
+            "n_bets": 11,
+            "cost": 1100,
+            "pnl": -1100,
+            "cum_pnl": 10030,
+            "roi": 0.0
+          }
+        ]
+      },
+      {
+        "name": "名古屋短_reg_3連単1点",
+        "n_bets": 145,
+        "cost": 14500,
+        "total_return": 18490,
+        "profit": 3990,
+        "roi": 127.5,
+        "hit_rate": 6.2,
+        "max_dd": -4510,
+        "months_positive": 6,
+        "months_total": 15,
+        "monthly": [
+          {
+            "month": "2025-01",
+            "n_bets": 13,
+            "cost": 1300,
+            "pnl": -1300,
+            "cum_pnl": -1300,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-02",
+            "n_bets": 8,
+            "cost": 800,
+            "pnl": -800,
+            "cum_pnl": -2100,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-03",
+            "n_bets": 9,
+            "cost": 900,
+            "pnl": -900,
+            "cum_pnl": -3000,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-04",
+            "n_bets": 9,
+            "cost": 900,
+            "pnl": -900,
+            "cum_pnl": -3900,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-05",
+            "n_bets": 8,
+            "cost": 800,
+            "pnl": 2420,
+            "cum_pnl": -1480,
+            "roi": 402.5
+          },
+          {
+            "month": "2025-06",
+            "n_bets": 14,
+            "cost": 1400,
+            "pnl": 3100,
+            "cum_pnl": 1620,
+            "roi": 321.4
+          },
+          {
+            "month": "2025-07",
+            "n_bets": 11,
+            "cost": 1100,
+            "pnl": 1190,
+            "cum_pnl": 2810,
+            "roi": 208.2
+          },
+          {
+            "month": "2025-08",
+            "n_bets": 5,
+            "cost": 500,
+            "pnl": -500,
+            "cum_pnl": 2310,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-09",
+            "n_bets": 9,
+            "cost": 900,
+            "pnl": 260,
+            "cum_pnl": 2570,
+            "roi": 128.9
+          },
+          {
+            "month": "2025-10",
+            "n_bets": 11,
+            "cost": 1100,
+            "pnl": -310,
+            "cum_pnl": 2260,
+            "roi": 71.8
+          },
+          {
+            "month": "2025-11",
+            "n_bets": 8,
+            "cost": 800,
+            "pnl": -800,
+            "cum_pnl": 1460,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-12",
+            "n_bets": 8,
+            "cost": 800,
+            "pnl": -800,
+            "cum_pnl": 660,
+            "roi": 0.0
+          },
+          {
+            "month": "2026-01",
+            "n_bets": 15,
+            "cost": 1500,
+            "pnl": -1500,
+            "cum_pnl": -840,
+            "roi": 0.0
+          },
+          {
+            "month": "2026-02",
+            "n_bets": 10,
+            "cost": 1000,
+            "pnl": 1810,
+            "cum_pnl": 970,
+            "roi": 281.0
+          },
+          {
+            "month": "2026-03",
+            "n_bets": 7,
+            "cost": 700,
+            "pnl": 3020,
+            "cum_pnl": 3990,
+            "roi": 531.4
+          }
+        ]
+      },
+      {
+        "name": "名古屋短_blend_馬単1点",
+        "n_bets": 145,
+        "cost": 14500,
+        "total_return": 18210,
+        "profit": 3710,
+        "roi": 125.6,
+        "hit_rate": 20.7,
+        "max_dd": -1680,
+        "months_positive": 8,
+        "months_total": 15,
+        "monthly": [
+          {
+            "month": "2025-01",
+            "n_bets": 13,
+            "cost": 1300,
+            "pnl": -880,
+            "cum_pnl": -880,
+            "roi": 32.3
+          },
+          {
+            "month": "2025-02",
+            "n_bets": 8,
+            "cost": 800,
+            "pnl": 290,
+            "cum_pnl": -590,
+            "roi": 136.2
+          },
+          {
+            "month": "2025-03",
+            "n_bets": 9,
+            "cost": 900,
+            "pnl": 160,
+            "cum_pnl": -430,
+            "roi": 117.8
+          },
+          {
+            "month": "2025-04",
+            "n_bets": 9,
+            "cost": 900,
+            "pnl": -230,
+            "cum_pnl": -660,
+            "roi": 74.4
+          },
+          {
+            "month": "2025-05",
+            "n_bets": 8,
+            "cost": 800,
+            "pnl": -100,
+            "cum_pnl": -760,
+            "roi": 87.5
+          },
+          {
+            "month": "2025-06",
+            "n_bets": 14,
+            "cost": 1400,
+            "pnl": 2240,
+            "cum_pnl": 1480,
+            "roi": 260.0
+          },
+          {
+            "month": "2025-07",
+            "n_bets": 11,
+            "cost": 1100,
+            "pnl": 190,
+            "cum_pnl": 1670,
+            "roi": 117.3
+          },
+          {
+            "month": "2025-08",
+            "n_bets": 5,
+            "cost": 500,
+            "pnl": -500,
+            "cum_pnl": 1170,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-09",
+            "n_bets": 9,
+            "cost": 900,
+            "pnl": 1220,
+            "cum_pnl": 2390,
+            "roi": 235.6
+          },
+          {
+            "month": "2025-10",
+            "n_bets": 11,
+            "cost": 1100,
+            "pnl": -280,
+            "cum_pnl": 2110,
+            "roi": 74.5
+          },
+          {
+            "month": "2025-11",
+            "n_bets": 8,
+            "cost": 800,
+            "pnl": -250,
+            "cum_pnl": 1860,
+            "roi": 68.8
+          },
+          {
+            "month": "2025-12",
+            "n_bets": 8,
+            "cost": 800,
+            "pnl": 10,
+            "cum_pnl": 1870,
+            "roi": 101.2
+          },
+          {
+            "month": "2026-01",
+            "n_bets": 15,
+            "cost": 1500,
+            "pnl": -630,
+            "cum_pnl": 1240,
+            "roi": 58.0
+          },
+          {
+            "month": "2026-02",
+            "n_bets": 10,
+            "cost": 1000,
+            "pnl": 2180,
+            "cum_pnl": 3420,
+            "roi": 318.0
+          },
+          {
+            "month": "2026-03",
+            "n_bets": 7,
+            "cost": 700,
+            "pnl": 290,
+            "cum_pnl": 3710,
+            "roi": 141.4
+          }
+        ]
+      },
+      {
+        "name": "園田中長_reg_3連単流し",
+        "n_bets": 147,
+        "cost": 29400,
+        "total_return": 36410,
+        "profit": 7010,
+        "roi": 123.8,
+        "hit_rate": 18.4,
+        "max_dd": -5470,
+        "months_positive": 7,
+        "months_total": 14,
+        "monthly": [
+          {
+            "month": "2025-01",
+            "n_bets": 8,
+            "cost": 1600,
+            "pnl": -1600,
+            "cum_pnl": -1600,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-03",
+            "n_bets": 11,
+            "cost": 2200,
+            "pnl": -2200,
+            "cum_pnl": -3800,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-04",
+            "n_bets": 16,
+            "cost": 3200,
+            "pnl": -500,
+            "cum_pnl": -4300,
+            "roi": 84.4
+          },
+          {
+            "month": "2025-05",
+            "n_bets": 13,
+            "cost": 2600,
+            "pnl": 140,
+            "cum_pnl": -4160,
+            "roi": 105.4
+          },
+          {
+            "month": "2025-06",
+            "n_bets": 13,
+            "cost": 2600,
+            "pnl": 1870,
+            "cum_pnl": -2290,
+            "roi": 171.9
+          },
+          {
+            "month": "2025-07",
+            "n_bets": 11,
+            "cost": 2200,
+            "pnl": 6830,
+            "cum_pnl": 4540,
+            "roi": 410.5
+          },
+          {
+            "month": "2025-08",
+            "n_bets": 11,
+            "cost": 2200,
+            "pnl": 1470,
+            "cum_pnl": 6010,
+            "roi": 166.8
+          },
+          {
+            "month": "2025-09",
+            "n_bets": 11,
+            "cost": 2200,
+            "pnl": -1420,
+            "cum_pnl": 4590,
+            "roi": 35.5
+          },
+          {
+            "month": "2025-10",
+            "n_bets": 12,
+            "cost": 2400,
+            "pnl": 5190,
+            "cum_pnl": 9780,
+            "roi": 316.2
+          },
+          {
+            "month": "2025-11",
+            "n_bets": 12,
+            "cost": 2400,
+            "pnl": -2400,
+            "cum_pnl": 7380,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-12",
+            "n_bets": 14,
+            "cost": 2800,
+            "pnl": 50,
+            "cum_pnl": 7430,
+            "roi": 101.8
+          },
+          {
+            "month": "2026-01",
+            "n_bets": 7,
+            "cost": 1400,
+            "pnl": -1400,
+            "cum_pnl": 6030,
+            "roi": 0.0
+          },
+          {
+            "month": "2026-03",
+            "n_bets": 6,
+            "cost": 1200,
+            "pnl": 1380,
+            "cum_pnl": 7410,
+            "roi": 215.0
+          },
+          {
+            "month": "2026-04",
+            "n_bets": 2,
+            "cost": 400,
+            "pnl": -400,
+            "cum_pnl": 7010,
+            "roi": 0.0
+          }
+        ]
+      },
+      {
+        "name": "大井短_top3_3連単1点",
+        "n_bets": 546,
+        "cost": 54600,
+        "total_return": 62540,
+        "profit": 7940,
+        "roi": 114.5,
+        "hit_rate": 7.0,
+        "max_dd": -13930,
+        "months_positive": 8,
+        "months_total": 15,
+        "monthly": [
+          {
+            "month": "2025-01",
+            "n_bets": 48,
+            "cost": 4800,
+            "pnl": -1730,
+            "cum_pnl": -1730,
+            "roi": 64.0
+          },
+          {
+            "month": "2025-02",
+            "n_bets": 23,
+            "cost": 2300,
+            "pnl": -230,
+            "cum_pnl": -1960,
+            "roi": 90.0
+          },
+          {
+            "month": "2025-03",
+            "n_bets": 45,
+            "cost": 4500,
+            "pnl": -3930,
+            "cum_pnl": -5890,
+            "roi": 12.7
+          },
+          {
+            "month": "2025-04",
+            "n_bets": 35,
+            "cost": 3500,
+            "pnl": 350,
+            "cum_pnl": -5540,
+            "roi": 110.0
+          },
+          {
+            "month": "2025-05",
+            "n_bets": 33,
+            "cost": 3300,
+            "pnl": 5540,
+            "cum_pnl": 0,
+            "roi": 267.9
+          },
+          {
+            "month": "2025-06",
+            "n_bets": 32,
+            "cost": 3200,
+            "pnl": 3990,
+            "cum_pnl": 3990,
+            "roi": 224.7
+          },
+          {
+            "month": "2025-07",
+            "n_bets": 44,
+            "cost": 4400,
+            "pnl": 810,
+            "cum_pnl": 4800,
+            "roi": 118.4
+          },
+          {
+            "month": "2025-08",
+            "n_bets": 23,
+            "cost": 2300,
+            "pnl": -2300,
+            "cum_pnl": 2500,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-09",
+            "n_bets": 48,
+            "cost": 4800,
+            "pnl": -3870,
+            "cum_pnl": -1370,
+            "roi": 19.4
+          },
+          {
+            "month": "2025-10",
+            "n_bets": 49,
+            "cost": 4900,
+            "pnl": -4900,
+            "cum_pnl": -6270,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-11",
+            "n_bets": 22,
+            "cost": 2200,
+            "pnl": 1360,
+            "cum_pnl": -4910,
+            "roi": 161.8
+          },
+          {
+            "month": "2025-12",
+            "n_bets": 51,
+            "cost": 5100,
+            "pnl": 4320,
+            "cum_pnl": -590,
+            "roi": 184.7
+          },
+          {
+            "month": "2026-01",
+            "n_bets": 50,
+            "cost": 5000,
+            "pnl": 9190,
+            "cum_pnl": 8600,
+            "roi": 283.8
+          },
+          {
+            "month": "2026-02",
+            "n_bets": 21,
+            "cost": 2100,
+            "pnl": -2100,
+            "cum_pnl": 6500,
+            "roi": 0.0
+          },
+          {
+            "month": "2026-03",
+            "n_bets": 22,
+            "cost": 2200,
+            "pnl": 1440,
+            "cum_pnl": 7940,
+            "roi": 165.5
+          }
+        ]
+      },
+      {
+        "name": "大井中長_win_馬単流し",
+        "n_bets": 138,
+        "cost": 41400,
+        "total_return": 46530,
+        "profit": 5130,
+        "roi": 112.4,
+        "hit_rate": 29.0,
+        "max_dd": -8100,
+        "months_positive": 7,
+        "months_total": 15,
+        "monthly": [
+          {
+            "month": "2025-01",
+            "n_bets": 9,
+            "cost": 2700,
+            "pnl": -1490,
+            "cum_pnl": -1490,
+            "roi": 44.8
+          },
+          {
+            "month": "2025-02",
+            "n_bets": 6,
+            "cost": 1800,
+            "pnl": -920,
+            "cum_pnl": -2410,
+            "roi": 48.9
+          },
+          {
+            "month": "2025-03",
+            "n_bets": 13,
+            "cost": 3900,
+            "pnl": 670,
+            "cum_pnl": -1740,
+            "roi": 117.2
+          },
+          {
+            "month": "2025-04",
+            "n_bets": 13,
+            "cost": 3900,
+            "pnl": 7380,
+            "cum_pnl": 5640,
+            "roi": 289.2
+          },
+          {
+            "month": "2025-05",
+            "n_bets": 10,
+            "cost": 3000,
+            "pnl": 940,
+            "cum_pnl": 6580,
+            "roi": 131.3
+          },
+          {
+            "month": "2025-06",
+            "n_bets": 7,
+            "cost": 2100,
+            "pnl": 1770,
+            "cum_pnl": 8350,
+            "roi": 184.3
+          },
+          {
+            "month": "2025-07",
+            "n_bets": 8,
+            "cost": 2400,
+            "pnl": 110,
+            "cum_pnl": 8460,
+            "roi": 104.6
+          },
+          {
+            "month": "2025-08",
+            "n_bets": 7,
+            "cost": 2100,
+            "pnl": -250,
+            "cum_pnl": 8210,
+            "roi": 88.1
+          },
+          {
+            "month": "2025-09",
+            "n_bets": 11,
+            "cost": 3300,
+            "pnl": 1890,
+            "cum_pnl": 10100,
+            "roi": 157.3
+          },
+          {
+            "month": "2025-10",
+            "n_bets": 11,
+            "cost": 3300,
+            "pnl": -1880,
+            "cum_pnl": 8220,
+            "roi": 43.0
+          },
+          {
+            "month": "2025-11",
+            "n_bets": 5,
+            "cost": 1500,
+            "pnl": -690,
+            "cum_pnl": 7530,
+            "roi": 54.0
+          },
+          {
+            "month": "2025-12",
+            "n_bets": 13,
+            "cost": 3900,
+            "pnl": -3900,
+            "cum_pnl": 3630,
+            "roi": 0.0
+          },
+          {
+            "month": "2026-01",
+            "n_bets": 10,
+            "cost": 3000,
+            "pnl": -720,
+            "cum_pnl": 2910,
+            "roi": 76.0
+          },
+          {
+            "month": "2026-02",
+            "n_bets": 7,
+            "cost": 2100,
+            "pnl": 2510,
+            "cum_pnl": 5420,
+            "roi": 219.5
+          },
+          {
+            "month": "2026-03",
+            "n_bets": 8,
+            "cost": 2400,
+            "pnl": -290,
+            "cum_pnl": 5130,
+            "roi": 87.9
+          }
+        ]
+      },
+      {
+        "name": "船橋中長_top3_馬単1点",
+        "n_bets": 95,
+        "cost": 9500,
+        "total_return": 10370,
+        "profit": 870,
+        "roi": 109.2,
+        "hit_rate": 15.8,
+        "max_dd": -1920,
+        "months_positive": 6,
+        "months_total": 16,
+        "monthly": [
+          {
+            "month": "2025-01",
+            "n_bets": 6,
+            "cost": 600,
+            "pnl": 1500,
+            "cum_pnl": 1500,
+            "roi": 350.0
+          },
+          {
+            "month": "2025-02",
+            "n_bets": 6,
+            "cost": 600,
+            "pnl": -310,
+            "cum_pnl": 1190,
+            "roi": 48.3
+          },
+          {
+            "month": "2025-03",
+            "n_bets": 9,
+            "cost": 900,
+            "pnl": -900,
+            "cum_pnl": 290,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-04",
+            "n_bets": 5,
+            "cost": 500,
+            "pnl": 810,
+            "cum_pnl": 1100,
+            "roi": 262.0
+          },
+          {
+            "month": "2025-05",
+            "n_bets": 6,
+            "cost": 600,
+            "pnl": -600,
+            "cum_pnl": 500,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-06",
+            "n_bets": 7,
+            "cost": 700,
+            "pnl": -320,
+            "cum_pnl": 180,
+            "roi": 54.3
+          },
+          {
+            "month": "2025-07",
+            "n_bets": 10,
+            "cost": 1000,
+            "pnl": 890,
+            "cum_pnl": 1070,
+            "roi": 189.0
+          },
+          {
+            "month": "2025-08",
+            "n_bets": 8,
+            "cost": 800,
+            "pnl": -800,
+            "cum_pnl": 270,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-09",
+            "n_bets": 3,
+            "cost": 300,
+            "pnl": 320,
+            "cum_pnl": 590,
+            "roi": 206.7
+          },
+          {
+            "month": "2025-10",
+            "n_bets": 4,
+            "cost": 400,
+            "pnl": 1060,
+            "cum_pnl": 1650,
+            "roi": 365.0
+          },
+          {
+            "month": "2025-11",
+            "n_bets": 6,
+            "cost": 600,
+            "pnl": -600,
+            "cum_pnl": 1050,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-12",
+            "n_bets": 6,
+            "cost": 600,
+            "pnl": 1720,
+            "cum_pnl": 2770,
+            "roi": 386.7
+          },
+          {
+            "month": "2026-01",
+            "n_bets": 7,
+            "cost": 700,
+            "pnl": -700,
+            "cum_pnl": 2070,
+            "roi": 0.0
+          },
+          {
+            "month": "2026-02",
+            "n_bets": 5,
+            "cost": 500,
+            "pnl": -500,
+            "cum_pnl": 1570,
+            "roi": 0.0
+          },
+          {
+            "month": "2026-03",
+            "n_bets": 3,
+            "cost": 300,
+            "pnl": -300,
+            "cum_pnl": 1270,
+            "roi": 0.0
+          },
+          {
+            "month": "2026-04",
+            "n_bets": 4,
+            "cost": 400,
+            "pnl": -400,
+            "cum_pnl": 870,
+            "roi": 0.0
+          }
+        ]
+      },
+      {
+        "name": "川崎短_win_単勝",
+        "n_bets": 71,
+        "cost": 7100,
+        "total_return": 7640,
+        "profit": 540,
+        "roi": 107.6,
+        "hit_rate": 54.9,
+        "max_dd": -830,
+        "months_positive": 4,
+        "months_total": 7,
+        "monthly": [
+          {
+            "month": "2025-01",
+            "n_bets": 9,
+            "cost": 900,
+            "pnl": 210,
+            "cum_pnl": 210,
+            "roi": 123.3
+          },
+          {
+            "month": "2025-02",
+            "n_bets": 12,
+            "cost": 1200,
+            "pnl": 90,
+            "cum_pnl": 300,
+            "roi": 107.5
+          },
+          {
+            "month": "2025-12",
+            "n_bets": 13,
+            "cost": 1300,
+            "pnl": 200,
+            "cum_pnl": 500,
+            "roi": 115.4
+          },
+          {
+            "month": "2026-01",
+            "n_bets": 11,
+            "cost": 1100,
+            "pnl": -250,
+            "cum_pnl": 250,
+            "roi": 77.3
+          },
+          {
+            "month": "2026-02",
+            "n_bets": 13,
+            "cost": 1300,
+            "pnl": 650,
+            "cum_pnl": 900,
+            "roi": 150.0
+          },
+          {
+            "month": "2026-03",
+            "n_bets": 9,
+            "cost": 900,
+            "pnl": -240,
+            "cum_pnl": 660,
+            "roi": 73.3
+          },
+          {
+            "month": "2026-04",
+            "n_bets": 4,
+            "cost": 400,
+            "pnl": -120,
+            "cum_pnl": 540,
+            "roi": 70.0
+          }
+        ]
+      },
+      {
+        "name": "大井短_reg_馬単1点",
+        "n_bets": 546,
+        "cost": 54600,
+        "total_return": 58110,
+        "profit": 3510,
+        "roi": 106.4,
+        "hit_rate": 18.3,
+        "max_dd": -7080,
+        "months_positive": 8,
+        "months_total": 15,
+        "monthly": [
+          {
+            "month": "2025-01",
+            "n_bets": 48,
+            "cost": 4800,
+            "pnl": -40,
+            "cum_pnl": -40,
+            "roi": 99.2
+          },
+          {
+            "month": "2025-02",
+            "n_bets": 23,
+            "cost": 2300,
+            "pnl": -1210,
+            "cum_pnl": -1250,
+            "roi": 47.4
+          },
+          {
+            "month": "2025-03",
+            "n_bets": 45,
+            "cost": 4500,
+            "pnl": -2110,
+            "cum_pnl": -3360,
+            "roi": 53.1
+          },
+          {
+            "month": "2025-04",
+            "n_bets": 35,
+            "cost": 3500,
+            "pnl": -110,
+            "cum_pnl": -3470,
+            "roi": 96.9
+          },
+          {
+            "month": "2025-05",
+            "n_bets": 33,
+            "cost": 3300,
+            "pnl": 5090,
+            "cum_pnl": 1620,
+            "roi": 254.2
+          },
+          {
+            "month": "2025-06",
+            "n_bets": 32,
+            "cost": 3200,
+            "pnl": 1220,
+            "cum_pnl": 2840,
+            "roi": 138.1
+          },
+          {
+            "month": "2025-07",
+            "n_bets": 44,
+            "cost": 4400,
+            "pnl": 2150,
+            "cum_pnl": 4990,
+            "roi": 148.9
+          },
+          {
+            "month": "2025-08",
+            "n_bets": 23,
+            "cost": 2300,
+            "pnl": -1370,
+            "cum_pnl": 3620,
+            "roi": 40.4
+          },
+          {
+            "month": "2025-09",
+            "n_bets": 48,
+            "cost": 4800,
+            "pnl": -2100,
+            "cum_pnl": 1520,
+            "roi": 56.2
+          },
+          {
+            "month": "2025-10",
+            "n_bets": 49,
+            "cost": 4900,
+            "pnl": -2960,
+            "cum_pnl": -1440,
+            "roi": 39.6
+          },
+          {
+            "month": "2025-11",
+            "n_bets": 22,
+            "cost": 2200,
+            "pnl": 240,
+            "cum_pnl": -1200,
+            "roi": 110.9
+          },
+          {
+            "month": "2025-12",
+            "n_bets": 51,
+            "cost": 5100,
+            "pnl": 1960,
+            "cum_pnl": 760,
+            "roi": 138.4
+          },
+          {
+            "month": "2026-01",
+            "n_bets": 50,
+            "cost": 5000,
+            "pnl": 1230,
+            "cum_pnl": 1990,
+            "roi": 124.6
+          },
+          {
+            "month": "2026-02",
+            "n_bets": 21,
+            "cost": 2100,
+            "pnl": 980,
+            "cum_pnl": 2970,
+            "roi": 146.7
+          },
+          {
+            "month": "2026-03",
+            "n_bets": 22,
+            "cost": 2200,
+            "pnl": 540,
+            "cum_pnl": 3510,
+            "roi": 124.5
+          }
+        ]
+      },
+      {
+        "name": "浦和中長_reg_ワイドBOX2",
+        "n_bets": 90,
+        "cost": 9000,
+        "total_return": 9500,
+        "profit": 500,
+        "roi": 105.6,
+        "hit_rate": 46.7,
+        "max_dd": -850,
+        "months_positive": 6,
+        "months_total": 15,
+        "monthly": [
+          {
+            "month": "2025-01",
+            "n_bets": 4,
+            "cost": 400,
+            "pnl": -150,
+            "cum_pnl": -150,
+            "roi": 62.5
+          },
+          {
+            "month": "2025-02",
+            "n_bets": 6,
+            "cost": 600,
+            "pnl": -120,
+            "cum_pnl": -270,
+            "roi": 80.0
+          },
+          {
+            "month": "2025-03",
+            "n_bets": 5,
+            "cost": 500,
+            "pnl": -30,
+            "cum_pnl": -300,
+            "roi": 94.0
+          },
+          {
+            "month": "2025-04",
+            "n_bets": 8,
+            "cost": 800,
+            "pnl": 350,
+            "cum_pnl": 50,
+            "roi": 143.8
+          },
+          {
+            "month": "2025-05",
+            "n_bets": 7,
+            "cost": 700,
+            "pnl": 270,
+            "cum_pnl": 320,
+            "roi": 138.6
+          },
+          {
+            "month": "2025-06",
+            "n_bets": 6,
+            "cost": 600,
+            "pnl": 240,
+            "cum_pnl": 560,
+            "roi": 140.0
+          },
+          {
+            "month": "2025-07",
+            "n_bets": 8,
+            "cost": 800,
+            "pnl": 520,
+            "cum_pnl": 1080,
+            "roi": 165.0
+          },
+          {
+            "month": "2025-08",
+            "n_bets": 5,
+            "cost": 500,
+            "pnl": -60,
+            "cum_pnl": 1020,
+            "roi": 88.0
+          },
+          {
+            "month": "2025-09",
+            "n_bets": 6,
+            "cost": 600,
+            "pnl": -350,
+            "cum_pnl": 670,
+            "roi": 41.7
+          },
+          {
+            "month": "2025-10",
+            "n_bets": 7,
+            "cost": 700,
+            "pnl": 120,
+            "cum_pnl": 790,
+            "roi": 117.1
+          },
+          {
+            "month": "2025-11",
+            "n_bets": 7,
+            "cost": 700,
+            "pnl": -20,
+            "cum_pnl": 770,
+            "roi": 97.1
+          },
+          {
+            "month": "2025-12",
+            "n_bets": 6,
+            "cost": 600,
+            "pnl": -160,
+            "cum_pnl": 610,
+            "roi": 73.3
+          },
+          {
+            "month": "2026-01",
+            "n_bets": 7,
+            "cost": 700,
+            "pnl": -170,
+            "cum_pnl": 440,
+            "roi": 75.7
+          },
+          {
+            "month": "2026-02",
+            "n_bets": 7,
+            "cost": 700,
+            "pnl": 160,
+            "cum_pnl": 600,
+            "roi": 122.9
+          },
+          {
+            "month": "2026-03",
+            "n_bets": 1,
+            "cost": 100,
+            "pnl": -100,
+            "cum_pnl": 500,
+            "roi": 0.0
+          }
+        ]
+      },
+      {
+        "name": "浦和マイル_win_3連単流し",
+        "n_bets": 562,
+        "cost": 112400,
+        "total_return": 90640,
+        "profit": -21760,
+        "roi": 80.6,
+        "hit_rate": 7.8,
+        "max_dd": -30510,
+        "months_positive": 7,
+        "months_total": 15,
+        "monthly": [
+          {
+            "month": "2025-01",
+            "n_bets": 38,
+            "cost": 7600,
+            "pnl": 1660,
+            "cum_pnl": 1660,
+            "roi": 121.8
+          },
+          {
+            "month": "2025-02",
+            "n_bets": 47,
+            "cost": 9400,
+            "pnl": -4620,
+            "cum_pnl": -2960,
+            "roi": 50.9
+          },
+          {
+            "month": "2025-03",
+            "n_bets": 37,
+            "cost": 7400,
+            "pnl": -2100,
+            "cum_pnl": -5060,
+            "roi": 71.6
+          },
+          {
+            "month": "2025-04",
+            "n_bets": 42,
+            "cost": 8400,
+            "pnl": -6950,
+            "cum_pnl": -12010,
+            "roi": 17.3
+          },
+          {
+            "month": "2025-05",
+            "n_bets": 42,
+            "cost": 8400,
+            "pnl": 450,
+            "cum_pnl": -11560,
+            "roi": 105.4
+          },
+          {
+            "month": "2025-06",
+            "n_bets": 41,
+            "cost": 8200,
+            "pnl": 340,
+            "cum_pnl": -11220,
+            "roi": 104.1
+          },
+          {
+            "month": "2025-07",
+            "n_bets": 41,
+            "cost": 8200,
+            "pnl": 970,
+            "cum_pnl": -10250,
+            "roi": 111.8
+          },
+          {
+            "month": "2025-08",
+            "n_bets": 32,
+            "cost": 6400,
+            "pnl": -3100,
+            "cum_pnl": -13350,
+            "roi": 51.6
+          },
+          {
+            "month": "2025-09",
+            "n_bets": 44,
+            "cost": 8800,
+            "pnl": -8800,
+            "cum_pnl": -22150,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-10",
+            "n_bets": 45,
+            "cost": 9000,
+            "pnl": 3450,
+            "cum_pnl": -18700,
+            "roi": 138.3
+          },
+          {
+            "month": "2025-11",
+            "n_bets": 33,
+            "cost": 6600,
+            "pnl": -4500,
+            "cum_pnl": -23200,
+            "roi": 31.8
+          },
+          {
+            "month": "2025-12",
+            "n_bets": 34,
+            "cost": 6800,
+            "pnl": -980,
+            "cum_pnl": -24180,
+            "roi": 85.6
+          },
+          {
+            "month": "2026-01",
+            "n_bets": 34,
+            "cost": 6800,
+            "pnl": 7910,
+            "cum_pnl": -16270,
+            "roi": 216.3
+          },
+          {
+            "month": "2026-02",
+            "n_bets": 43,
+            "cost": 8600,
+            "pnl": -5920,
+            "cum_pnl": -22190,
+            "roi": 31.2
+          },
+          {
+            "month": "2026-03",
+            "n_bets": 9,
+            "cost": 1800,
+            "pnl": 430,
+            "cum_pnl": -21760,
+            "roi": 123.9
+          }
+        ]
+      },
+      {
+        "name": "大井中長_top3_3連複1点",
+        "n_bets": 138,
+        "cost": 13800,
+        "total_return": 8890,
+        "profit": -4910,
+        "roi": 64.4,
+        "hit_rate": 11.6,
+        "max_dd": -4900,
+        "months_positive": 5,
+        "months_total": 15,
+        "monthly": [
+          {
+            "month": "2025-01",
+            "n_bets": 9,
+            "cost": 900,
+            "pnl": -900,
+            "cum_pnl": -900,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-02",
+            "n_bets": 6,
+            "cost": 600,
+            "pnl": 360,
+            "cum_pnl": -540,
+            "roi": 160.0
+          },
+          {
+            "month": "2025-03",
+            "n_bets": 13,
+            "cost": 1300,
+            "pnl": -1300,
+            "cum_pnl": -1840,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-04",
+            "n_bets": 13,
+            "cost": 1300,
+            "pnl": -1300,
+            "cum_pnl": -3140,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-05",
+            "n_bets": 10,
+            "cost": 1000,
+            "pnl": -1000,
+            "cum_pnl": -4140,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-06",
+            "n_bets": 7,
+            "cost": 700,
+            "pnl": -200,
+            "cum_pnl": -4340,
+            "roi": 71.4
+          },
+          {
+            "month": "2025-07",
+            "n_bets": 8,
+            "cost": 800,
+            "pnl": -430,
+            "cum_pnl": -4770,
+            "roi": 46.2
+          },
+          {
+            "month": "2025-08",
+            "n_bets": 7,
+            "cost": 700,
+            "pnl": -130,
+            "cum_pnl": -4900,
+            "roi": 81.4
+          },
+          {
+            "month": "2025-09",
+            "n_bets": 11,
+            "cost": 1100,
+            "pnl": 520,
+            "cum_pnl": -4380,
+            "roi": 147.3
+          },
+          {
+            "month": "2025-10",
+            "n_bets": 11,
+            "cost": 1100,
+            "pnl": 1310,
+            "cum_pnl": -3070,
+            "roi": 219.1
+          },
+          {
+            "month": "2025-11",
+            "n_bets": 5,
+            "cost": 500,
+            "pnl": -500,
+            "cum_pnl": -3570,
+            "roi": 0.0
+          },
+          {
+            "month": "2025-12",
+            "n_bets": 13,
+            "cost": 1300,
+            "pnl": 450,
+            "cum_pnl": -3120,
+            "roi": 134.6
+          },
+          {
+            "month": "2026-01",
+            "n_bets": 10,
+            "cost": 1000,
+            "pnl": -1000,
+            "cum_pnl": -4120,
+            "roi": 0.0
+          },
+          {
+            "month": "2026-02",
+            "n_bets": 7,
+            "cost": 700,
+            "pnl": 10,
+            "cum_pnl": -4110,
+            "roi": 101.4
+          },
+          {
+            "month": "2026-03",
+            "n_bets": 8,
+            "cost": 800,
+            "pnl": -800,
+            "cum_pnl": -4910,
+            "roi": 0.0
+          }
+        ]
+      }
+    ],
+    "venues": [
+      {
+        "venue": "船橋",
+        "n_bets": 376,
+        "roi": 129.0,
+        "profit": 10900
+      },
+      {
+        "venue": "名古屋",
+        "n_bets": 290,
+        "roi": 126.6,
+        "profit": 7700
+      },
+      {
+        "venue": "園田",
+        "n_bets": 147,
+        "roi": 123.8,
+        "profit": 7010
+      },
+      {
+        "venue": "川崎",
+        "n_bets": 71,
+        "roi": 107.6,
+        "profit": 540
+      },
+      {
+        "venue": "大井",
+        "n_bets": 1368,
+        "roi": 107.1,
+        "profit": 11670
+      },
+      {
+        "venue": "浦和",
+        "n_bets": 742,
+        "roi": 103.0,
+        "profit": 5340
+      }
+    ]
+  },
+  "live": {
+    "generated_at": "2026-04-06T23:33:45.255476",
+    "status": "live",
+    "summary": {
+      "start_date": "2026-03-27",
+      "end_date": "2026-03-27",
+      "n_days": 1,
+      "n_bets": 12,
+      "n_hits": 2,
+      "hit_rate": 16.7,
+      "total_cost": 1400,
+      "total_return": 4380,
+      "profit": 2980,
+      "roi": 312.9
+    },
+    "monthly": [
+      {
+        "month": "2026-03",
+        "n_bets": 12,
+        "hits": 2,
+        "cost": 1400,
+        "return": 4380,
+        "pnl": 2980,
+        "cum_pnl": 2980,
+        "roi": 312.9
+      }
+    ],
+    "strategies": [
+      {
+        "strategy": "名古屋短_reg_3連単1点",
+        "n_bets": 1,
+        "hits": 1,
+        "roi": 3720.0,
+        "profit": 3620
+      },
+      {
+        "strategy": "名古屋短_blend_馬単1点",
+        "n_bets": 1,
+        "hits": 1,
+        "roi": 660.0,
+        "profit": 560
+      },
+      {
+        "strategy": "大井中長_top3_3連複1点",
+        "n_bets": 1,
+        "hits": 0,
+        "roi": 0.0,
+        "profit": -100
+      },
+      {
+        "strategy": "大井中長_win_馬単流し",
+        "n_bets": 1,
+        "hits": 0,
+        "roi": 0.0,
+        "profit": -300
+      },
+      {
+        "strategy": "大井短_reg_馬単1点",
+        "n_bets": 4,
+        "hits": 0,
+        "roi": 0.0,
+        "profit": -400
+      },
+      {
+        "strategy": "大井短_top3_3連単1点",
+        "n_bets": 4,
+        "hits": 0,
+        "roi": 0.0,
+        "profit": -400
+      }
+    ],
+    "daily": [
+      {
+        "date": "2026-03-27",
+        "n_bets": 12,
+        "hits": 2,
+        "cost": 1400,
+        "return": 4380,
+        "pnl": 2980
+      }
+    ]
+  },
+  "history": {
+    "generated_at": "2026-04-06T23:33:45.252321",
+    "type": "backtest",
+    "n_races": 211,
+    "races": [
+      {
+        "race_id": "21_20260406_01",
+        "date": "2026-04-06",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 280,
+        "total_pnl": 180,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 280,
+            "pnl": 180,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260406_04",
+        "date": "2026-04-06",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260406_09",
+        "date": "2026-04-06",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260406_11",
+        "date": "2026-04-06",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260403_03",
+        "date": "2026-04-03",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260403_06",
+        "date": "2026-04-03",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260403_08",
+        "date": "2026-04-03",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260403_11",
+        "date": "2026-04-03",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260403_12",
+        "date": "2026-04-03",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋中長_top3_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260402_03",
+        "date": "2026-04-02",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260402_06",
+        "date": "2026-04-02",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260402_10",
+        "date": "2026-04-02",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260402_11",
+        "date": "2026-04-02",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋中長_top3_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260402_12",
+        "date": "2026-04-02",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋中長_top3_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "27_20260402_11",
+        "date": "2026-04-02",
+        "venue": "園田",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "園田中長_reg_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260401_03",
+        "date": "2026-04-01",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260401_06",
+        "date": "2026-04-01",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260401_07",
+        "date": "2026-04-01",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260401_11",
+        "date": "2026-04-01",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260401_12",
+        "date": "2026-04-01",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋中長_top3_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "27_20260401_11",
+        "date": "2026-04-01",
+        "venue": "園田",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "園田中長_reg_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260331_03",
+        "date": "2026-03-31",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260331_08",
+        "date": "2026-03-31",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260331_09",
+        "date": "2026-03-31",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋中長_top3_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260331_11",
+        "date": "2026-03-31",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260331_12",
+        "date": "2026-03-31",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋中長_top3_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "27_20260331_11",
+        "date": "2026-03-31",
+        "venue": "園田",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "園田中長_reg_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260330_03",
+        "date": "2026-03-30",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260330_07",
+        "date": "2026-03-30",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260330_10",
+        "date": "2026-03-30",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260330_11",
+        "date": "2026-03-30",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260330_12",
+        "date": "2026-03-30",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋中長_top3_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260327_02",
+        "date": "2026-03-27",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 1080,
+        "total_pnl": 880,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 1080,
+            "pnl": 980,
+            "hit": true
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260327_03",
+        "date": "2026-03-27",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260327_06",
+        "date": "2026-03-27",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260327_09",
+        "date": "2026-03-27",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260327_12",
+        "date": "2026-03-27",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 0,
+        "total_pnl": -400,
+        "strategies": [
+          {
+            "strategy": "大井中長_win_馬単流し",
+            "cost": 300,
+            "return": 0,
+            "pnl": -300,
+            "hit": false
+          },
+          {
+            "strategy": "大井中長_top3_3連複1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260327_01",
+        "date": "2026-03-27",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 4380,
+        "total_pnl": 4180,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 660,
+            "pnl": 560,
+            "hit": true
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 3720,
+            "pnl": 3620,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260326_03",
+        "date": "2026-03-26",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260326_06",
+        "date": "2026-03-26",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260326_07",
+        "date": "2026-03-26",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 0,
+        "total_pnl": -400,
+        "strategies": [
+          {
+            "strategy": "大井中長_win_馬単流し",
+            "cost": 300,
+            "return": 0,
+            "pnl": -300,
+            "hit": false
+          },
+          {
+            "strategy": "大井中長_top3_3連複1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260326_09",
+        "date": "2026-03-26",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 950,
+        "total_pnl": 550,
+        "strategies": [
+          {
+            "strategy": "大井中長_win_馬単流し",
+            "cost": 300,
+            "return": 950,
+            "pnl": 650,
+            "hit": true
+          },
+          {
+            "strategy": "大井中長_top3_3連複1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260326_10",
+        "date": "2026-03-26",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260326_11",
+        "date": "2026-03-26",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "27_20260326_09",
+        "date": "2026-03-26",
+        "venue": "園田",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 1040,
+        "total_pnl": 840,
+        "strategies": [
+          {
+            "strategy": "園田中長_reg_3連単流し",
+            "cost": 200,
+            "return": 1040,
+            "pnl": 840,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260325_01",
+        "date": "2026-03-25",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 1160,
+        "total_pnl": 760,
+        "strategies": [
+          {
+            "strategy": "大井中長_win_馬単流し",
+            "cost": 300,
+            "return": 1160,
+            "pnl": 860,
+            "hit": true
+          },
+          {
+            "strategy": "大井中長_top3_3連複1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260325_03",
+        "date": "2026-03-25",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 830,
+        "total_pnl": 630,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 830,
+            "pnl": 730,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260325_06",
+        "date": "2026-03-25",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 720,
+        "total_pnl": 520,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 720,
+            "pnl": 620,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260325_07",
+        "date": "2026-03-25",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260325_09",
+        "date": "2026-03-25",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 0,
+        "total_pnl": -400,
+        "strategies": [
+          {
+            "strategy": "大井中長_win_馬単流し",
+            "cost": 300,
+            "return": 0,
+            "pnl": -300,
+            "hit": false
+          },
+          {
+            "strategy": "大井中長_top3_3連複1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260325_10",
+        "date": "2026-03-25",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260325_11",
+        "date": "2026-03-25",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 0,
+        "total_pnl": -400,
+        "strategies": [
+          {
+            "strategy": "大井中長_win_馬単流し",
+            "cost": 300,
+            "return": 0,
+            "pnl": -300,
+            "hit": false
+          },
+          {
+            "strategy": "大井中長_top3_3連複1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260325_10",
+        "date": "2026-03-25",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "27_20260325_09",
+        "date": "2026-03-25",
+        "venue": "園田",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "園田中長_reg_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "27_20260325_10",
+        "date": "2026-03-25",
+        "venue": "園田",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 1540,
+        "total_pnl": 1340,
+        "strategies": [
+          {
+            "strategy": "園田中長_reg_3連単流し",
+            "cost": 200,
+            "return": 1540,
+            "pnl": 1340,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260324_02",
+        "date": "2026-03-24",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260324_04",
+        "date": "2026-03-24",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260324_06",
+        "date": "2026-03-24",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 3050,
+        "total_pnl": 2850,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 2560,
+            "pnl": 2460,
+            "hit": true
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 490,
+            "pnl": 390,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260324_09",
+        "date": "2026-03-24",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 700,
+        "total_pnl": 500,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 700,
+            "pnl": 600,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260324_10",
+        "date": "2026-03-24",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 0,
+        "total_pnl": -400,
+        "strategies": [
+          {
+            "strategy": "大井中長_win_馬単流し",
+            "cost": 300,
+            "return": 0,
+            "pnl": -300,
+            "hit": false
+          },
+          {
+            "strategy": "大井中長_top3_3連複1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260324_12",
+        "date": "2026-03-24",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 0,
+        "total_pnl": -400,
+        "strategies": [
+          {
+            "strategy": "大井中長_win_馬単流し",
+            "cost": 300,
+            "return": 0,
+            "pnl": -300,
+            "hit": false
+          },
+          {
+            "strategy": "大井中長_top3_3連複1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260324_11",
+        "date": "2026-03-24",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "27_20260324_11",
+        "date": "2026-03-24",
+        "venue": "園田",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "園田中長_reg_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260323_01",
+        "date": "2026-03-23",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260323_03",
+        "date": "2026-03-23",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260323_05",
+        "date": "2026-03-23",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260323_09",
+        "date": "2026-03-23",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260323_11",
+        "date": "2026-03-23",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260323_12",
+        "date": "2026-03-23",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260323_01",
+        "date": "2026-03-23",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260323_04",
+        "date": "2026-03-23",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 330,
+        "total_pnl": 130,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 330,
+            "pnl": 230,
+            "hit": true
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260323_11",
+        "date": "2026-03-23",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260318_01",
+        "date": "2026-03-18",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260318_02",
+        "date": "2026-03-18",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260318_03",
+        "date": "2026-03-18",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260318_04",
+        "date": "2026-03-18",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260318_05",
+        "date": "2026-03-18",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260318_07",
+        "date": "2026-03-18",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 2230,
+        "total_pnl": 2030,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 2230,
+            "pnl": 2030,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260318_09",
+        "date": "2026-03-18",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260318_10",
+        "date": "2026-03-18",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260318_11",
+        "date": "2026-03-18",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260318_12",
+        "date": "2026-03-18",
+        "venue": "浦和",
+        "n_strategies": 2,
+        "total_cost": 700,
+        "total_return": 0,
+        "total_pnl": -700,
+        "strategies": [
+          {
+            "strategy": "浦和中長_win_3連単BOX3",
+            "cost": 600,
+            "return": 0,
+            "pnl": -600,
+            "hit": false
+          },
+          {
+            "strategy": "浦和中長_reg_ワイドBOX2",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "27_20260318_11",
+        "date": "2026-03-18",
+        "venue": "園田",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "園田中長_reg_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260306_03",
+        "date": "2026-03-06",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 130,
+        "total_pnl": 30,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 130,
+            "pnl": 30,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260306_06",
+        "date": "2026-03-06",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260305_03",
+        "date": "2026-03-05",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260305_10",
+        "date": "2026-03-05",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260303_07",
+        "date": "2026-03-03",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 130,
+        "total_pnl": 30,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 130,
+            "pnl": 30,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260303_12",
+        "date": "2026-03-03",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 150,
+        "total_pnl": 50,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 150,
+            "pnl": 50,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260302_03",
+        "date": "2026-03-02",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 250,
+        "total_pnl": 150,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 250,
+            "pnl": 150,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260302_09",
+        "date": "2026-03-02",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260302_11",
+        "date": "2026-03-02",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260302_02",
+        "date": "2026-03-02",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260228_03",
+        "date": "2026-02-28",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260228_04",
+        "date": "2026-02-28",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260228_05",
+        "date": "2026-02-28",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260228_06",
+        "date": "2026-02-28",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260228_07",
+        "date": "2026-02-28",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260228_08",
+        "date": "2026-02-28",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260228_09",
+        "date": "2026-02-28",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260228_10",
+        "date": "2026-02-28",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260228_11",
+        "date": "2026-02-28",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 1710,
+        "total_pnl": 1510,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 1710,
+            "pnl": 1510,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260228_12",
+        "date": "2026-02-28",
+        "venue": "浦和",
+        "n_strategies": 2,
+        "total_cost": 700,
+        "total_return": 0,
+        "total_pnl": -700,
+        "strategies": [
+          {
+            "strategy": "浦和中長_win_3連単BOX3",
+            "cost": 600,
+            "return": 0,
+            "pnl": -600,
+            "hit": false
+          },
+          {
+            "strategy": "浦和中長_reg_ワイドBOX2",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260227_01",
+        "date": "2026-02-27",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260227_02",
+        "date": "2026-02-27",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260227_03",
+        "date": "2026-02-27",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260227_04",
+        "date": "2026-02-27",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260227_07",
+        "date": "2026-02-27",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260227_08",
+        "date": "2026-02-27",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260227_09",
+        "date": "2026-02-27",
+        "venue": "浦和",
+        "n_strategies": 2,
+        "total_cost": 700,
+        "total_return": 3600,
+        "total_pnl": 2900,
+        "strategies": [
+          {
+            "strategy": "浦和中長_win_3連単BOX3",
+            "cost": 600,
+            "return": 3400,
+            "pnl": 2800,
+            "hit": true
+          },
+          {
+            "strategy": "浦和中長_reg_ワイドBOX2",
+            "cost": 100,
+            "return": 200,
+            "pnl": 100,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260227_10",
+        "date": "2026-02-27",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 970,
+        "total_pnl": 770,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 970,
+            "pnl": 770,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260227_11",
+        "date": "2026-02-27",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260227_12",
+        "date": "2026-02-27",
+        "venue": "浦和",
+        "n_strategies": 2,
+        "total_cost": 700,
+        "total_return": 0,
+        "total_pnl": -700,
+        "strategies": [
+          {
+            "strategy": "浦和中長_win_3連単BOX3",
+            "cost": 600,
+            "return": 0,
+            "pnl": -600,
+            "hit": false
+          },
+          {
+            "strategy": "浦和中長_reg_ワイドBOX2",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260227_12",
+        "date": "2026-02-27",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260226_01",
+        "date": "2026-02-26",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260226_02",
+        "date": "2026-02-26",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260226_04",
+        "date": "2026-02-26",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260226_05",
+        "date": "2026-02-26",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260226_07",
+        "date": "2026-02-26",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260226_08",
+        "date": "2026-02-26",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260226_09",
+        "date": "2026-02-26",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260226_10",
+        "date": "2026-02-26",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260226_11",
+        "date": "2026-02-26",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260226_12",
+        "date": "2026-02-26",
+        "venue": "浦和",
+        "n_strategies": 2,
+        "total_cost": 700,
+        "total_return": 130,
+        "total_pnl": -570,
+        "strategies": [
+          {
+            "strategy": "浦和中長_win_3連単BOX3",
+            "cost": 600,
+            "return": 0,
+            "pnl": -600,
+            "hit": false
+          },
+          {
+            "strategy": "浦和中長_reg_ワイドBOX2",
+            "cost": 100,
+            "return": 130,
+            "pnl": 30,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260225_01",
+        "date": "2026-02-25",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260225_02",
+        "date": "2026-02-25",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260225_04",
+        "date": "2026-02-25",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260225_05",
+        "date": "2026-02-25",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260225_06",
+        "date": "2026-02-25",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260225_08",
+        "date": "2026-02-25",
+        "venue": "浦和",
+        "n_strategies": 2,
+        "total_cost": 700,
+        "total_return": 0,
+        "total_pnl": -700,
+        "strategies": [
+          {
+            "strategy": "浦和中長_win_3連単BOX3",
+            "cost": 600,
+            "return": 0,
+            "pnl": -600,
+            "hit": false
+          },
+          {
+            "strategy": "浦和中長_reg_ワイドBOX2",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260225_09",
+        "date": "2026-02-25",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260225_11",
+        "date": "2026-02-25",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260225_12",
+        "date": "2026-02-25",
+        "venue": "浦和",
+        "n_strategies": 2,
+        "total_cost": 700,
+        "total_return": 300,
+        "total_pnl": -400,
+        "strategies": [
+          {
+            "strategy": "浦和中長_win_3連単BOX3",
+            "cost": 600,
+            "return": 0,
+            "pnl": -600,
+            "hit": false
+          },
+          {
+            "strategy": "浦和中長_reg_ワイドBOX2",
+            "cost": 100,
+            "return": 300,
+            "pnl": 200,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260223_01",
+        "date": "2026-02-23",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260223_02",
+        "date": "2026-02-23",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260223_03",
+        "date": "2026-02-23",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260223_04",
+        "date": "2026-02-23",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260223_05",
+        "date": "2026-02-23",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260223_06",
+        "date": "2026-02-23",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260223_07",
+        "date": "2026-02-23",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260223_08",
+        "date": "2026-02-23",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260223_10",
+        "date": "2026-02-23",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260223_11",
+        "date": "2026-02-23",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_win_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260223_12",
+        "date": "2026-02-23",
+        "venue": "浦和",
+        "n_strategies": 2,
+        "total_cost": 700,
+        "total_return": 230,
+        "total_pnl": -470,
+        "strategies": [
+          {
+            "strategy": "浦和中長_win_3連単BOX3",
+            "cost": 600,
+            "return": 0,
+            "pnl": -600,
+            "hit": false
+          },
+          {
+            "strategy": "浦和中長_reg_ワイドBOX2",
+            "cost": 100,
+            "return": 230,
+            "pnl": 130,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260223_01",
+        "date": "2026-02-23",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 1710,
+        "total_pnl": 1510,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 450,
+            "pnl": 350,
+            "hit": true
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 1260,
+            "pnl": 1160,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260223_08",
+        "date": "2026-02-23",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 710,
+        "total_pnl": 510,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 710,
+            "pnl": 610,
+            "hit": true
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260223_10",
+        "date": "2026-02-23",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 480,
+        "total_pnl": 280,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 480,
+            "pnl": 380,
+            "hit": true
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260223_12",
+        "date": "2026-02-23",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260220_01",
+        "date": "2026-02-20",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260220_05",
+        "date": "2026-02-20",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 410,
+        "total_pnl": 210,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 410,
+            "pnl": 310,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260220_09",
+        "date": "2026-02-20",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 420,
+        "total_pnl": 220,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 420,
+            "pnl": 320,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260220_12",
+        "date": "2026-02-20",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 3120,
+        "total_pnl": 2720,
+        "strategies": [
+          {
+            "strategy": "大井中長_win_馬単流し",
+            "cost": 300,
+            "return": 3120,
+            "pnl": 2820,
+            "hit": true
+          },
+          {
+            "strategy": "大井中長_top3_3連複1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260219_01",
+        "date": "2026-02-19",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260219_03",
+        "date": "2026-02-19",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 0,
+        "total_pnl": -400,
+        "strategies": [
+          {
+            "strategy": "大井中長_win_馬単流し",
+            "cost": 300,
+            "return": 0,
+            "pnl": -300,
+            "hit": false
+          },
+          {
+            "strategy": "大井中長_top3_3連複1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260219_06",
+        "date": "2026-02-19",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260219_07",
+        "date": "2026-02-19",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 0,
+        "total_pnl": -400,
+        "strategies": [
+          {
+            "strategy": "大井中長_win_馬単流し",
+            "cost": 300,
+            "return": 0,
+            "pnl": -300,
+            "hit": false
+          },
+          {
+            "strategy": "大井中長_top3_3連複1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260219_10",
+        "date": "2026-02-19",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 810,
+        "total_pnl": 610,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 810,
+            "pnl": 710,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260219_11",
+        "date": "2026-02-19",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260218_01",
+        "date": "2026-02-18",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260218_04",
+        "date": "2026-02-18",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260218_06",
+        "date": "2026-02-18",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 700,
+        "total_pnl": 500,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 700,
+            "pnl": 600,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260218_10",
+        "date": "2026-02-18",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260218_11",
+        "date": "2026-02-18",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 360,
+        "total_pnl": -40,
+        "strategies": [
+          {
+            "strategy": "大井中長_win_馬単流し",
+            "cost": 300,
+            "return": 0,
+            "pnl": -300,
+            "hit": false
+          },
+          {
+            "strategy": "大井中長_top3_3連複1点",
+            "cost": 100,
+            "return": 360,
+            "pnl": 260,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260218_12",
+        "date": "2026-02-18",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260217_01",
+        "date": "2026-02-17",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260217_04",
+        "date": "2026-02-17",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260217_07",
+        "date": "2026-02-17",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260217_09",
+        "date": "2026-02-17",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260217_11",
+        "date": "2026-02-17",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 1490,
+        "total_pnl": 1090,
+        "strategies": [
+          {
+            "strategy": "大井中長_win_馬単流し",
+            "cost": 300,
+            "return": 1490,
+            "pnl": 1190,
+            "hit": true
+          },
+          {
+            "strategy": "大井中長_top3_3連複1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260217_12",
+        "date": "2026-02-17",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 0,
+        "total_pnl": -400,
+        "strategies": [
+          {
+            "strategy": "大井中長_win_馬単流し",
+            "cost": 300,
+            "return": 0,
+            "pnl": -300,
+            "hit": false
+          },
+          {
+            "strategy": "大井中長_top3_3連複1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260216_01",
+        "date": "2026-02-16",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260216_03",
+        "date": "2026-02-16",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260216_05",
+        "date": "2026-02-16",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 740,
+        "total_pnl": 540,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 740,
+            "pnl": 640,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260216_07",
+        "date": "2026-02-16",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260216_10",
+        "date": "2026-02-16",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_top3_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_reg_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260216_12",
+        "date": "2026-02-16",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 350,
+        "total_pnl": -50,
+        "strategies": [
+          {
+            "strategy": "大井中長_win_馬単流し",
+            "cost": 300,
+            "return": 0,
+            "pnl": -300,
+            "hit": false
+          },
+          {
+            "strategy": "大井中長_top3_3連複1点",
+            "cost": 100,
+            "return": 350,
+            "pnl": 250,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260213_03",
+        "date": "2026-02-13",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260213_06",
+        "date": "2026-02-13",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260213_07",
+        "date": "2026-02-13",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260213_09",
+        "date": "2026-02-13",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 1080,
+        "total_pnl": 980,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 1080,
+            "pnl": 980,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260213_11",
+        "date": "2026-02-13",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋中長_top3_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260213_11",
+        "date": "2026-02-13",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 970,
+        "total_pnl": 770,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 970,
+            "pnl": 870,
+            "hit": true
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260212_03",
+        "date": "2026-02-12",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260212_06",
+        "date": "2026-02-12",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260212_09",
+        "date": "2026-02-12",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260212_11",
+        "date": "2026-02-12",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260212_12",
+        "date": "2026-02-12",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋中長_top3_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260212_12",
+        "date": "2026-02-12",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 2120,
+        "total_pnl": 1920,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 570,
+            "pnl": 470,
+            "hit": true
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 1550,
+            "pnl": 1450,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260211_03",
+        "date": "2026-02-11",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260211_08",
+        "date": "2026-02-11",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260211_10",
+        "date": "2026-02-11",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260211_11",
+        "date": "2026-02-11",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋中長_top3_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260211_12",
+        "date": "2026-02-11",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋中長_top3_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260211_12",
+        "date": "2026-02-11",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260210_03",
+        "date": "2026-02-10",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260210_06",
+        "date": "2026-02-10",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260210_08",
+        "date": "2026-02-10",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260210_09",
+        "date": "2026-02-10",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋中長_top3_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260210_12",
+        "date": "2026-02-10",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260209_03",
+        "date": "2026-02-09",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260209_06",
+        "date": "2026-02-09",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260209_09",
+        "date": "2026-02-09",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260209_11",
+        "date": "2026-02-09",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "19_20260209_12",
+        "date": "2026-02-09",
+        "venue": "船橋",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "船橋マイル_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260209_01",
+        "date": "2026-02-09",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260209_02",
+        "date": "2026-02-09",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "名古屋短_blend_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "名古屋短_reg_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260206_01",
+        "date": "2026-02-06",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 270,
+        "total_pnl": 170,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 270,
+            "pnl": 170,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260206_05",
+        "date": "2026-02-06",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 290,
+        "total_pnl": 190,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 290,
+            "pnl": 190,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260206_12",
+        "date": "2026-02-06",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 200,
+        "total_pnl": 100,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 200,
+            "pnl": 100,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260205_02",
+        "date": "2026-02-05",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 180,
+        "total_pnl": 80,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 180,
+            "pnl": 80,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260205_05",
+        "date": "2026-02-05",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 200,
+        "total_pnl": 100,
+        "strategies": [
+          {
+            "strategy": "川崎短_win_単勝",
+            "cost": 100,
+            "return": 200,
+            "pnl": 100,
+            "hit": true
+          }
+        ]
+      }
+    ]
+  }
+}
