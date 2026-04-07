@@ -1,6 +1,6 @@
 {
   "performance": {
-    "generated_at": "2026-04-07T08:22:28.572069",
+    "generated_at": "2026-04-07T22:03:55.054890",
     "type": "backtest",
     "period": {
       "start": "2026-03-18",
@@ -390,19 +390,19 @@
     ]
   },
   "live": {
-    "generated_at": "2026-04-07T08:22:28.729992",
+    "generated_at": "2026-04-07T22:03:55.565210",
     "status": "live",
     "summary": {
       "start_date": "2026-03-27",
-      "end_date": "2026-03-27",
-      "n_days": 1,
-      "n_bets": 12,
-      "n_hits": 2,
-      "hit_rate": 16.7,
-      "total_cost": 1400,
-      "total_return": 4380,
-      "profit": 2980,
-      "roi": 312.9
+      "end_date": "2026-04-07",
+      "n_days": 2,
+      "n_bets": 18,
+      "n_hits": 5,
+      "hit_rate": 27.8,
+      "total_cost": 2000,
+      "total_return": 5030,
+      "profit": 3030,
+      "roi": 251.5
     },
     "monthly": [
       {
@@ -414,6 +414,16 @@
         "pnl": 2980,
         "cum_pnl": 2980,
         "roi": 312.9
+      },
+      {
+        "month": "2026-04",
+        "n_bets": 6,
+        "hits": 3,
+        "cost": 600,
+        "return": 650,
+        "pnl": 50,
+        "cum_pnl": 3030,
+        "roi": 108.3
       }
     ],
     "strategies": [
@@ -430,6 +440,27 @@
         "hits": 1,
         "roi": 660.0,
         "profit": 560
+      },
+      {
+        "strategy": "名古屋短_馬単1点",
+        "n_bets": 2,
+        "hits": 2,
+        "roi": 235.0,
+        "profit": 270
+      },
+      {
+        "strategy": "川崎短_単勝",
+        "n_bets": 2,
+        "hits": 1,
+        "roi": 90.0,
+        "profit": -20
+      },
+      {
+        "strategy": "名古屋短_3連単1点",
+        "n_bets": 2,
+        "hits": 0,
+        "roi": 0.0,
+        "profit": -200
       },
       {
         "strategy": "大井中長_top3_3連複1点",
@@ -462,6 +493,14 @@
     ],
     "daily": [
       {
+        "date": "2026-04-07",
+        "n_bets": 6,
+        "hits": 3,
+        "cost": 600,
+        "return": 650,
+        "pnl": 50
+      },
+      {
         "date": "2026-03-27",
         "n_bets": 12,
         "hits": 2,
@@ -472,7 +511,7 @@
     ]
   },
   "history": {
-    "generated_at": "2026-04-07T08:22:28.727798",
+    "generated_at": "2026-04-07T22:03:55.558893",
     "type": "backtest",
     "n_races": 83,
     "races": [
