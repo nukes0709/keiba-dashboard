@@ -1,6 +1,6 @@
 {
   "performance": {
-    "generated_at": "2026-04-10T08:00:54.585564",
+    "generated_at": "2026-04-10T22:03:05.999599",
     "type": "backtest",
     "period": {
       "start": "2026-03-18",
@@ -390,19 +390,19 @@
     ]
   },
   "live": {
-    "generated_at": "2026-04-10T08:00:55.104672",
+    "generated_at": "2026-04-10T22:03:06.510520",
     "status": "live",
     "summary": {
       "start_date": "2026-03-27",
-      "end_date": "2026-04-09",
-      "n_days": 4,
-      "n_bets": 29,
-      "n_hits": 6,
-      "hit_rate": 20.7,
-      "total_cost": 3100,
-      "total_return": 5270,
-      "profit": 2170,
-      "roi": 170.0
+      "end_date": "2026-04-10",
+      "n_days": 5,
+      "n_bets": 31,
+      "n_hits": 7,
+      "hit_rate": 22.6,
+      "total_cost": 3300,
+      "total_return": 5440,
+      "profit": 2140,
+      "roi": 164.8
     },
     "monthly": [
       {
@@ -417,13 +417,13 @@
       },
       {
         "month": "2026-04",
-        "n_bets": 17,
-        "hits": 4,
-        "cost": 1700,
-        "return": 890,
-        "pnl": -810,
-        "cum_pnl": 2170,
-        "roi": 52.4
+        "n_bets": 19,
+        "hits": 5,
+        "cost": 1900,
+        "return": 1060,
+        "pnl": -840,
+        "cum_pnl": 2140,
+        "roi": 55.8
       }
     ],
     "strategies": [
@@ -450,10 +450,10 @@
       },
       {
         "strategy": "川崎短_単勝",
-        "n_bets": 7,
-        "hits": 2,
-        "roi": 60.0,
-        "profit": -280
+        "n_bets": 9,
+        "hits": 3,
+        "roi": 65.6,
+        "profit": -310
       },
       {
         "strategy": "名古屋短_3連単1点",
@@ -493,6 +493,14 @@
     ],
     "daily": [
       {
+        "date": "2026-04-10",
+        "n_bets": 2,
+        "hits": 1,
+        "cost": 200,
+        "return": 170,
+        "pnl": -30
+      },
+      {
         "date": "2026-04-09",
         "n_bets": 5,
         "hits": 0,
@@ -527,7 +535,7 @@
     ]
   },
   "history": {
-    "generated_at": "2026-04-10T08:00:55.098084",
+    "generated_at": "2026-04-10T22:03:06.504014",
     "type": "backtest",
     "n_races": 83,
     "races": [
