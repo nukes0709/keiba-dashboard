@@ -1,6 +1,6 @@
 {
   "performance": {
-    "generated_at": "2026-04-16T08:01:32.772419",
+    "generated_at": "2026-04-16T22:03:09.696253",
     "type": "backtest",
     "period": {
       "start": "2026-03-18",
@@ -390,19 +390,19 @@
     ]
   },
   "live": {
-    "generated_at": "2026-04-16T08:01:33.290010",
+    "generated_at": "2026-04-16T22:03:10.247192",
     "status": "live",
     "summary": {
       "start_date": "2026-03-27",
-      "end_date": "2026-04-15",
-      "n_days": 8,
-      "n_bets": 67,
+      "end_date": "2026-04-16",
+      "n_days": 9,
+      "n_bets": 77,
       "n_hits": 10,
-      "hit_rate": 14.9,
-      "total_cost": 8100,
+      "hit_rate": 13.0,
+      "total_cost": 9500,
       "total_return": 7440,
-      "profit": -660,
-      "roi": 91.9
+      "profit": -2060,
+      "roi": 78.3
     },
     "monthly": [
       {
@@ -417,13 +417,13 @@
       },
       {
         "month": "2026-04",
-        "n_bets": 55,
+        "n_bets": 65,
         "hits": 8,
-        "cost": 6700,
+        "cost": 8100,
         "return": 3060,
-        "pnl": -3640,
-        "cum_pnl": -660,
-        "roi": 45.7
+        "pnl": -5040,
+        "cum_pnl": -2060,
+        "roi": 37.8
       }
     ],
     "strategies": [
@@ -443,10 +443,10 @@
       },
       {
         "strategy": "大井中長_3連複1点",
-        "n_bets": 6,
+        "n_bets": 8,
         "hits": 2,
-        "roi": 170.0,
-        "profit": 420
+        "roi": 127.5,
+        "profit": 220
       },
       {
         "strategy": "名古屋短_馬単1点",
@@ -456,18 +456,18 @@
         "profit": -30
       },
       {
-        "strategy": "大井短_馬単1点",
-        "n_bets": 12,
-        "hits": 1,
-        "roi": 81.7,
-        "profit": -220
-      },
-      {
         "strategy": "川崎短_単勝",
         "n_bets": 9,
         "hits": 3,
         "roi": 65.6,
         "profit": -310
+      },
+      {
+        "strategy": "大井短_馬単1点",
+        "n_bets": 15,
+        "hits": 1,
+        "roi": 65.3,
+        "profit": -520
       },
       {
         "strategy": "名古屋短_3連単1点",
@@ -492,17 +492,17 @@
       },
       {
         "strategy": "大井中長_馬単流し",
-        "n_bets": 6,
+        "n_bets": 8,
         "hits": 0,
         "roi": 0.0,
-        "profit": -1800
+        "profit": -2400
       },
       {
         "strategy": "大井短_3連単1点",
-        "n_bets": 12,
+        "n_bets": 15,
         "hits": 0,
         "roi": 0.0,
-        "profit": -1200
+        "profit": -1500
       },
       {
         "strategy": "大井短_reg_馬単1点",
@@ -520,6 +520,14 @@
       }
     ],
     "daily": [
+      {
+        "date": "2026-04-16",
+        "n_bets": 10,
+        "hits": 0,
+        "cost": 1400,
+        "return": 0,
+        "pnl": -1400
+      },
       {
         "date": "2026-04-15",
         "n_bets": 16,
@@ -587,7 +595,7 @@
     ]
   },
   "history": {
-    "generated_at": "2026-04-16T08:01:33.282845",
+    "generated_at": "2026-04-16T22:03:10.240017",
     "type": "backtest",
     "n_races": 83,
     "races": [
