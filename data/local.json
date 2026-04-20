@@ -1,6 +1,6 @@
 {
   "performance": {
-    "generated_at": "2026-04-20T08:01:55.345913",
+    "generated_at": "2026-04-20T22:04:45.564473",
     "type": "backtest",
     "period": {
       "start": "2026-03-18",
@@ -390,19 +390,19 @@
     ]
   },
   "live": {
-    "generated_at": "2026-04-20T08:01:55.876143",
+    "generated_at": "2026-04-20T22:04:46.090976",
     "status": "live",
     "summary": {
       "start_date": "2026-03-27",
-      "end_date": "2026-04-17",
-      "n_days": 10,
-      "n_bets": 87,
-      "n_hits": 12,
-      "hit_rate": 13.8,
-      "total_cost": 10700,
-      "total_return": 8600,
-      "profit": -2100,
-      "roi": 80.4
+      "end_date": "2026-04-20",
+      "n_days": 11,
+      "n_bets": 101,
+      "n_hits": 13,
+      "hit_rate": 12.9,
+      "total_cost": 13900,
+      "total_return": 8820,
+      "profit": -5080,
+      "roi": 63.5
     },
     "monthly": [
       {
@@ -417,13 +417,13 @@
       },
       {
         "month": "2026-04",
-        "n_bets": 75,
-        "hits": 10,
-        "cost": 9300,
-        "return": 4220,
-        "pnl": -5080,
-        "cum_pnl": -2100,
-        "roi": 45.4
+        "n_bets": 89,
+        "hits": 11,
+        "cost": 12500,
+        "return": 4440,
+        "pnl": -8060,
+        "cum_pnl": -5080,
+        "roi": 35.5
       }
     ],
     "strategies": [
@@ -449,11 +449,11 @@
         "profit": 120
       },
       {
-        "strategy": "名古屋短_馬単1点",
-        "n_bets": 5,
-        "hits": 2,
-        "roi": 94.0,
-        "profit": -30
+        "strategy": "浦和中長_ワイド",
+        "n_bets": 2,
+        "hits": 1,
+        "roi": 110.0,
+        "profit": 20
       },
       {
         "strategy": "大井短_馬単1点",
@@ -461,6 +461,13 @@
         "hits": 2,
         "roi": 79.5,
         "profit": -390
+      },
+      {
+        "strategy": "名古屋短_馬単1点",
+        "n_bets": 6,
+        "hits": 2,
+        "roi": 78.3,
+        "profit": -130
       },
       {
         "strategy": "川崎短_単勝",
@@ -478,10 +485,10 @@
       },
       {
         "strategy": "名古屋短_3連単1点",
-        "n_bets": 5,
+        "n_bets": 6,
         "hits": 0,
         "roi": 0.0,
-        "profit": -500
+        "profit": -600
       },
       {
         "strategy": "大井中長_top3_3連複1点",
@@ -517,9 +524,31 @@
         "hits": 0,
         "roi": 0.0,
         "profit": -400
+      },
+      {
+        "strategy": "浦和マイル_3連単流し",
+        "n_bets": 8,
+        "hits": 0,
+        "roi": 0.0,
+        "profit": -1600
+      },
+      {
+        "strategy": "浦和中長_3連単BOX3",
+        "n_bets": 2,
+        "hits": 0,
+        "roi": 0.0,
+        "profit": -1200
       }
     ],
     "daily": [
+      {
+        "date": "2026-04-20",
+        "n_bets": 14,
+        "hits": 1,
+        "cost": 3200,
+        "return": 220,
+        "pnl": -2980
+      },
       {
         "date": "2026-04-17",
         "n_bets": 10,
@@ -603,7 +632,7 @@
     ]
   },
   "history": {
-    "generated_at": "2026-04-20T08:01:55.868565",
+    "generated_at": "2026-04-20T22:04:46.083280",
     "type": "backtest",
     "n_races": 83,
     "races": [
