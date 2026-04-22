@@ -1,6 +1,6 @@
 {
   "performance": {
-    "generated_at": "2026-04-22T08:02:21.975624",
+    "generated_at": "2026-04-22T22:05:46.996999",
     "type": "backtest",
     "period": {
       "start": "2026-03-18",
@@ -390,19 +390,19 @@
     ]
   },
   "live": {
-    "generated_at": "2026-04-22T08:02:22.484950",
+    "generated_at": "2026-04-22T22:05:47.523428",
     "status": "live",
     "summary": {
       "start_date": "2026-03-27",
-      "end_date": "2026-04-21",
-      "n_days": 12,
-      "n_bets": 113,
-      "n_hits": 17,
-      "hit_rate": 15.0,
-      "total_cost": 16900,
-      "total_return": 19750,
-      "profit": 2850,
-      "roi": 116.9
+      "end_date": "2026-04-22",
+      "n_days": 13,
+      "n_bets": 123,
+      "n_hits": 19,
+      "hit_rate": 15.4,
+      "total_cost": 19500,
+      "total_return": 22580,
+      "profit": 3080,
+      "roi": 115.8
     },
     "monthly": [
       {
@@ -417,13 +417,13 @@
       },
       {
         "month": "2026-04",
-        "n_bets": 101,
-        "hits": 15,
-        "cost": 15500,
-        "return": 15370,
-        "pnl": -130,
-        "cum_pnl": 2850,
-        "roi": 99.2
+        "n_bets": 111,
+        "hits": 17,
+        "cost": 18100,
+        "return": 18200,
+        "pnl": 100,
+        "cum_pnl": 3080,
+        "roi": 100.6
       }
     ],
     "strategies": [
@@ -443,16 +443,16 @@
       },
       {
         "strategy": "浦和中長_3連単BOX3",
-        "n_bets": 4,
-        "hits": 2,
-        "roi": 431.7,
-        "profit": 7960
+        "n_bets": 6,
+        "hits": 3,
+        "roi": 360.8,
+        "profit": 9390
       },
       {
         "strategy": "浦和中長_ワイド",
-        "n_bets": 4,
-        "hits": 3,
-        "roi": 197.5,
+        "n_bets": 6,
+        "hits": 4,
+        "roi": 165.0,
         "profit": 390
       },
       {
@@ -534,13 +534,28 @@
       },
       {
         "strategy": "浦和マイル_3連単流し",
-        "n_bets": 16,
+        "n_bets": 21,
         "hits": 0,
         "roi": 0.0,
-        "profit": -3200
+        "profit": -4200
+      },
+      {
+        "strategy": "浦和マイル_win_3連単流し",
+        "n_bets": 1,
+        "hits": 0,
+        "roi": 0.0,
+        "profit": -200
       }
     ],
     "daily": [
+      {
+        "date": "2026-04-22",
+        "n_bets": 10,
+        "hits": 2,
+        "cost": 2600,
+        "return": 2830,
+        "pnl": 230
+      },
       {
         "date": "2026-04-21",
         "n_bets": 12,
@@ -640,7 +655,7 @@
     ]
   },
   "history": {
-    "generated_at": "2026-04-22T08:02:22.476909",
+    "generated_at": "2026-04-22T22:05:47.515468",
     "type": "backtest",
     "n_races": 83,
     "races": [
