@@ -1,6 +1,6 @@
 {
   "performance": {
-    "generated_at": "2026-05-01T22:04:04.109534",
+    "generated_at": "2026-05-04T22:05:44.564256",
     "type": "backtest",
     "period": {
       "start": "2026-03-18",
@@ -390,19 +390,19 @@
     ]
   },
   "live": {
-    "generated_at": "2026-05-01T22:04:04.659318",
+    "generated_at": "2026-05-04T22:05:45.120542",
     "status": "live",
     "summary": {
       "start_date": "2026-03-27",
-      "end_date": "2026-05-01",
-      "n_days": 20,
-      "n_bets": 200,
+      "end_date": "2026-05-04",
+      "n_days": 21,
+      "n_bets": 202,
       "n_hits": 23,
-      "hit_rate": 11.5,
-      "total_cost": 31700,
+      "hit_rate": 11.4,
+      "total_cost": 31900,
       "total_return": 25070,
-      "profit": -6630,
-      "roi": 79.1
+      "profit": -6830,
+      "roi": 78.6
     },
     "monthly": [
       {
@@ -427,12 +427,12 @@
       },
       {
         "month": "2026-05",
-        "n_bets": 12,
+        "n_bets": 14,
         "hits": 0,
-        "cost": 1400,
+        "cost": 1600,
         "return": 0,
-        "pnl": -1400,
-        "cum_pnl": -6630,
+        "pnl": -1600,
+        "cum_pnl": -6830,
         "roi": 0.0
       }
     ],
@@ -460,10 +460,10 @@
       },
       {
         "strategy": "名古屋短_馬単1点",
-        "n_bets": 7,
+        "n_bets": 8,
         "hits": 3,
-        "roi": 208.6,
-        "profit": 760
+        "roi": 182.5,
+        "profit": 660
       },
       {
         "strategy": "浦和中長_ワイド",
@@ -502,10 +502,10 @@
       },
       {
         "strategy": "名古屋短_3連単1点",
-        "n_bets": 7,
+        "n_bets": 8,
         "hits": 0,
         "roi": 0.0,
-        "profit": -700
+        "profit": -800
       },
       {
         "strategy": "大井中長_top3_3連複1点",
@@ -558,6 +558,14 @@
       }
     ],
     "daily": [
+      {
+        "date": "2026-05-04",
+        "n_bets": 2,
+        "hits": 0,
+        "cost": 200,
+        "return": 0,
+        "pnl": -200
+      },
       {
         "date": "2026-05-01",
         "n_bets": 12,
@@ -721,7 +729,7 @@
     ]
   },
   "history": {
-    "generated_at": "2026-05-01T22:04:04.650450",
+    "generated_at": "2026-05-04T22:05:45.110345",
     "type": "backtest",
     "n_races": 83,
     "races": [
