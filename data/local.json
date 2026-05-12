@@ -1,6 +1,6 @@
 {
   "performance": {
-    "generated_at": "2026-05-12T08:01:32.067340",
+    "generated_at": "2026-05-12T22:04:03.850053",
     "type": "backtest",
     "period": {
       "start": "2026-03-18",
@@ -390,19 +390,19 @@
     ]
   },
   "live": {
-    "generated_at": "2026-05-12T08:01:32.595676",
+    "generated_at": "2026-05-12T22:04:04.381087",
     "status": "live",
     "summary": {
       "start_date": "2026-03-27",
-      "end_date": "2026-05-11",
-      "n_days": 22,
-      "n_bets": 205,
+      "end_date": "2026-05-12",
+      "n_days": 23,
+      "n_bets": 207,
       "n_hits": 24,
-      "hit_rate": 11.7,
-      "total_cost": 32200,
+      "hit_rate": 11.6,
+      "total_cost": 32400,
       "total_return": 25210,
-      "profit": -6990,
-      "roi": 78.3
+      "profit": -7190,
+      "roi": 77.8
     },
     "monthly": [
       {
@@ -427,13 +427,13 @@
       },
       {
         "month": "2026-05",
-        "n_bets": 17,
+        "n_bets": 19,
         "hits": 1,
-        "cost": 1900,
+        "cost": 2100,
         "return": 140,
-        "pnl": -1760,
-        "cum_pnl": -6990,
-        "roi": 7.4
+        "pnl": -1960,
+        "cum_pnl": -7190,
+        "roi": 6.7
       }
     ],
     "strategies": [
@@ -481,10 +481,10 @@
       },
       {
         "strategy": "川崎短_単勝",
-        "n_bets": 12,
+        "n_bets": 14,
         "hits": 4,
-        "roi": 60.8,
-        "profit": -470
+        "roi": 52.1,
+        "profit": -670
       },
       {
         "strategy": "大井短_馬単1点",
@@ -558,6 +558,14 @@
       }
     ],
     "daily": [
+      {
+        "date": "2026-05-12",
+        "n_bets": 2,
+        "hits": 0,
+        "cost": 200,
+        "return": 0,
+        "pnl": -200
+      },
       {
         "date": "2026-05-11",
         "n_bets": 3,
@@ -737,7 +745,7 @@
     ]
   },
   "history": {
-    "generated_at": "2026-05-12T08:01:32.586257",
+    "generated_at": "2026-05-12T22:04:04.371619",
     "type": "backtest",
     "n_races": 83,
     "races": [
