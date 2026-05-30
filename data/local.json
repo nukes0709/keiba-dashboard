@@ -1,6 +1,6 @@
 {
   "performance": {
-    "generated_at": "2026-05-30T23:31:44.442199",
+    "generated_at": "2026-05-30T23:35:17.862052",
     "type": "backtest",
     "period": {
       "start": "2026-03-18",
@@ -390,19 +390,19 @@
     ]
   },
   "live": {
-    "generated_at": "2026-05-30T23:31:44.626134",
+    "generated_at": "2026-05-30T23:35:18.049872",
     "status": "live",
     "summary": {
       "start_date": "2026-03-27",
-      "end_date": "2026-05-27",
-      "n_days": 33,
-      "n_bets": 295,
-      "n_hits": 36,
-      "hit_rate": 12.2,
-      "total_cost": 46700,
-      "total_return": 32970,
-      "profit": -13730,
-      "roi": 70.6
+      "end_date": "2026-05-28",
+      "n_days": 34,
+      "n_bets": 305,
+      "n_hits": 37,
+      "hit_rate": 12.1,
+      "total_cost": 49300,
+      "total_return": 33120,
+      "profit": -16180,
+      "roi": 67.2
     },
     "monthly": [
       {
@@ -427,13 +427,13 @@
       },
       {
         "month": "2026-05",
-        "n_bets": 107,
-        "hits": 13,
-        "cost": 16400,
-        "return": 7900,
-        "pnl": -8500,
-        "cum_pnl": -13730,
-        "roi": 48.2
+        "n_bets": 117,
+        "hits": 14,
+        "cost": 19000,
+        "return": 8050,
+        "pnl": -10950,
+        "cum_pnl": -16180,
+        "roi": 42.4
       }
     ],
     "strategies": [
@@ -467,10 +467,10 @@
       },
       {
         "strategy": "浦和中長_3連単BOX3",
-        "n_bets": 15,
+        "n_bets": 17,
         "hits": 3,
-        "roi": 144.3,
-        "profit": 3990
+        "roi": 127.4,
+        "profit": 2790
       },
       {
         "strategy": "大井中長_3連複1点",
@@ -481,10 +481,10 @@
       },
       {
         "strategy": "浦和中長_ワイド",
-        "n_bets": 15,
-        "hits": 5,
-        "roi": 81.3,
-        "profit": -280
+        "n_bets": 17,
+        "hits": 6,
+        "roi": 80.6,
+        "profit": -330
       },
       {
         "strategy": "川崎短_単勝",
@@ -544,10 +544,10 @@
       },
       {
         "strategy": "浦和マイル_3連単流し",
-        "n_bets": 52,
+        "n_bets": 58,
         "hits": 0,
         "roi": 0.0,
-        "profit": -10400
+        "profit": -11600
       },
       {
         "strategy": "浦和マイル_win_3連単流し",
@@ -558,6 +558,14 @@
       }
     ],
     "daily": [
+      {
+        "date": "2026-05-28",
+        "n_bets": 10,
+        "hits": 1,
+        "cost": 2600,
+        "return": 150,
+        "pnl": -2450
+      },
       {
         "date": "2026-05-27",
         "n_bets": 10,
@@ -789,22 +797,172 @@
         "cost": 200,
         "return": 170,
         "pnl": -30
-      },
-      {
-        "date": "2026-04-09",
-        "n_bets": 5,
-        "hits": 0,
-        "cost": 500,
-        "return": 0,
-        "pnl": -500
       }
     ]
   },
   "history": {
-    "generated_at": "2026-05-30T23:31:44.621403",
+    "generated_at": "2026-05-30T23:35:18.044941",
     "type": "live",
-    "n_races": 179,
+    "n_races": 187,
     "races": [
+      {
+        "race_id": "18_20260528_03",
+        "date": "2026-05-28",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260528_04",
+        "date": "2026-05-28",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260528_07",
+        "date": "2026-05-28",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260528_08",
+        "date": "2026-05-28",
+        "venue": "浦和",
+        "n_strategies": 2,
+        "total_cost": 700,
+        "total_return": 150,
+        "total_pnl": -550,
+        "strategies": [
+          {
+            "strategy": "浦和中長_3連単BOX3",
+            "cost": 600,
+            "return": 0,
+            "pnl": -600,
+            "hit": false
+          },
+          {
+            "strategy": "浦和中長_ワイド",
+            "cost": 100,
+            "return": 150,
+            "pnl": 50,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260528_09",
+        "date": "2026-05-28",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260528_10",
+        "date": "2026-05-28",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260528_11",
+        "date": "2026-05-28",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260528_12",
+        "date": "2026-05-28",
+        "venue": "浦和",
+        "n_strategies": 2,
+        "total_cost": 700,
+        "total_return": 0,
+        "total_pnl": -700,
+        "strategies": [
+          {
+            "strategy": "浦和中長_3連単BOX3",
+            "cost": 600,
+            "return": 0,
+            "pnl": -600,
+            "hit": false
+          },
+          {
+            "strategy": "浦和中長_ワイド",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
       {
         "race_id": "18_20260527_03",
         "date": "2026-05-27",
