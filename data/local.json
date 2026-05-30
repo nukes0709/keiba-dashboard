@@ -1,6 +1,6 @@
 {
   "performance": {
-    "generated_at": "2026-05-30T23:15:59.832893",
+    "generated_at": "2026-05-30T23:21:11.929873",
     "type": "backtest",
     "period": {
       "start": "2026-03-18",
@@ -390,19 +390,19 @@
     ]
   },
   "live": {
-    "generated_at": "2026-05-30T23:16:00.020814",
+    "generated_at": "2026-05-30T23:21:12.111782",
     "status": "live",
     "summary": {
       "start_date": "2026-03-27",
-      "end_date": "2026-05-21",
-      "n_days": 29,
-      "n_bets": 253,
-      "n_hits": 31,
-      "hit_rate": 12.3,
-      "total_cost": 37600,
-      "total_return": 29250,
-      "profit": -8350,
-      "roi": 77.8
+      "end_date": "2026-05-22",
+      "n_days": 30,
+      "n_bets": 263,
+      "n_hits": 33,
+      "hit_rate": 12.5,
+      "total_cost": 39000,
+      "total_return": 30770,
+      "profit": -8230,
+      "roi": 78.9
     },
     "monthly": [
       {
@@ -427,13 +427,13 @@
       },
       {
         "month": "2026-05",
-        "n_bets": 65,
-        "hits": 8,
-        "cost": 7300,
-        "return": 4180,
-        "pnl": -3120,
-        "cum_pnl": -8350,
-        "roi": 57.3
+        "n_bets": 75,
+        "hits": 10,
+        "cost": 8700,
+        "return": 5700,
+        "pnl": -3000,
+        "cum_pnl": -8230,
+        "roi": 65.5
       }
     ],
     "strategies": [
@@ -466,6 +466,13 @@
         "profit": 760
       },
       {
+        "strategy": "大井中長_3連複1点",
+        "n_bets": 21,
+        "hits": 4,
+        "roi": 116.7,
+        "profit": 350
+      },
+      {
         "strategy": "浦和中長_ワイド",
         "n_bets": 10,
         "hits": 4,
@@ -480,13 +487,6 @@
         "profit": -100
       },
       {
-        "strategy": "大井中長_3連複1点",
-        "n_bets": 19,
-        "hits": 3,
-        "roi": 83.2,
-        "profit": -320
-      },
-      {
         "strategy": "川崎短_単勝",
         "n_bets": 22,
         "hits": 7,
@@ -495,17 +495,17 @@
       },
       {
         "strategy": "大井中長_馬単流し",
-        "n_bets": 19,
-        "hits": 3,
-        "roi": 52.1,
-        "profit": -2730
+        "n_bets": 21,
+        "hits": 4,
+        "roi": 57.5,
+        "profit": -2680
       },
       {
         "strategy": "大井短_馬単1点",
-        "n_bets": 54,
+        "n_bets": 57,
         "hits": 4,
-        "roi": 42.4,
-        "profit": -3110
+        "roi": 40.2,
+        "profit": -3410
       },
       {
         "strategy": "大井中長_top3_3連複1点",
@@ -523,10 +523,10 @@
       },
       {
         "strategy": "大井短_3連単1点",
-        "n_bets": 54,
+        "n_bets": 57,
         "hits": 0,
         "roi": 0.0,
-        "profit": -5400
+        "profit": -5700
       },
       {
         "strategy": "大井短_reg_馬単1点",
@@ -558,6 +558,14 @@
       }
     ],
     "daily": [
+      {
+        "date": "2026-05-22",
+        "n_bets": 10,
+        "hits": 2,
+        "cost": 1400,
+        "return": 1520,
+        "pnl": 120
+      },
       {
         "date": "2026-05-21",
         "n_bets": 10,
@@ -793,10 +801,135 @@
     ]
   },
   "history": {
-    "generated_at": "2026-05-30T23:16:00.016234",
+    "generated_at": "2026-05-30T23:21:12.107154",
     "type": "live",
-    "n_races": 154,
+    "n_races": 159,
     "races": [
+      {
+        "race_id": "20_20260522_02",
+        "date": "2026-05-22",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260522_04",
+        "date": "2026-05-22",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260522_08",
+        "date": "2026-05-22",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260522_09",
+        "date": "2026-05-22",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 650,
+        "total_pnl": 250,
+        "strategies": [
+          {
+            "strategy": "大井中長_馬単流し",
+            "cost": 300,
+            "return": 650,
+            "pnl": 350,
+            "hit": true
+          },
+          {
+            "strategy": "大井中長_3連複1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260522_11",
+        "date": "2026-05-22",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 870,
+        "total_pnl": 470,
+        "strategies": [
+          {
+            "strategy": "大井中長_馬単流し",
+            "cost": 300,
+            "return": 0,
+            "pnl": -300,
+            "hit": false
+          },
+          {
+            "strategy": "大井中長_3連複1点",
+            "cost": 100,
+            "return": 870,
+            "pnl": 770,
+            "hit": true
+          }
+        ]
+      },
       {
         "race_id": "20_20260521_03",
         "date": "2026-05-21",
