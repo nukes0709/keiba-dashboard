@@ -1,6 +1,6 @@
 {
   "performance": {
-    "generated_at": "2026-06-12T08:04:40.184151",
+    "generated_at": "2026-06-12T22:05:24.874797",
     "type": "backtest",
     "period": {
       "start": "2026-03-18",
@@ -390,19 +390,19 @@
     ]
   },
   "live": {
-    "generated_at": "2026-06-12T08:04:40.782552",
+    "generated_at": "2026-06-12T22:05:25.475152",
     "status": "live",
     "summary": {
       "start_date": "2026-03-27",
-      "end_date": "2026-06-11",
-      "n_days": 41,
-      "n_bets": 369,
-      "n_hits": 46,
-      "hit_rate": 12.5,
-      "total_cost": 58500,
-      "total_return": 41880,
-      "profit": -16620,
-      "roi": 71.6
+      "end_date": "2026-06-12",
+      "n_days": 42,
+      "n_bets": 379,
+      "n_hits": 49,
+      "hit_rate": 12.9,
+      "total_cost": 59700,
+      "total_return": 44730,
+      "profit": -14970,
+      "roi": 74.9
     },
     "monthly": [
       {
@@ -437,13 +437,13 @@
       },
       {
         "month": "2026-06",
-        "n_bets": 54,
-        "hits": 7,
-        "cost": 6600,
-        "return": 3140,
-        "pnl": -3460,
-        "cum_pnl": -16620,
-        "roi": 47.6
+        "n_bets": 64,
+        "hits": 10,
+        "cost": 7800,
+        "return": 5990,
+        "pnl": -1810,
+        "cum_pnl": -14970,
+        "roi": 76.8
       }
     ],
     "strategies": [
@@ -476,18 +476,18 @@
         "profit": 1250
       },
       {
+        "strategy": "大井中長_3連複1点",
+        "n_bets": 27,
+        "hits": 5,
+        "roi": 147.0,
+        "profit": 1270
+      },
+      {
         "strategy": "浦和中長_3連単BOX3",
         "n_bets": 19,
         "hits": 3,
         "roi": 113.9,
         "profit": 1590
-      },
-      {
-        "strategy": "大井中長_3連複1点",
-        "n_bets": 26,
-        "hits": 4,
-        "roi": 94.2,
-        "profit": -150
       },
       {
         "strategy": "浦和中長_ワイド",
@@ -505,17 +505,17 @@
       },
       {
         "strategy": "大井短_馬単1点",
-        "n_bets": 76,
-        "hits": 7,
+        "n_bets": 80,
+        "hits": 8,
         "roi": 50.7,
-        "profit": -3750
+        "profit": -3940
       },
       {
         "strategy": "大井中長_馬単流し",
-        "n_bets": 26,
+        "n_bets": 27,
         "hits": 5,
-        "roi": 49.0,
-        "profit": -3980
+        "roi": 47.2,
+        "profit": -4280
       },
       {
         "strategy": "浦和マイル_3連単流し",
@@ -526,10 +526,10 @@
       },
       {
         "strategy": "大井短_3連単1点",
-        "n_bets": 76,
-        "hits": 1,
-        "roi": 8.3,
-        "profit": -6970
+        "n_bets": 80,
+        "hits": 2,
+        "roi": 21.9,
+        "profit": -6250
       },
       {
         "strategy": "EV単勝",
@@ -575,6 +575,14 @@
       }
     ],
     "daily": [
+      {
+        "date": "2026-06-12",
+        "n_bets": 10,
+        "hits": 3,
+        "cost": 1200,
+        "return": 2850,
+        "pnl": 1650
+      },
       {
         "date": "2026-06-11",
         "n_bets": 12,
@@ -806,22 +814,139 @@
         "cost": 2600,
         "return": 2830,
         "pnl": 230
-      },
-      {
-        "date": "2026-04-21",
-        "n_bets": 12,
-        "hits": 4,
-        "cost": 3000,
-        "return": 10930,
-        "pnl": 7930
       }
     ]
   },
   "history": {
-    "generated_at": "2026-06-12T08:04:40.769441",
+    "generated_at": "2026-06-12T22:05:25.461561",
     "type": "live",
-    "n_races": 208,
+    "n_races": 213,
     "races": [
+      {
+        "race_id": "20_20260612_03",
+        "date": "2026-06-12",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260612_06",
+        "date": "2026-06-12",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260612_09",
+        "date": "2026-06-12",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 1330,
+        "total_pnl": 1130,
+        "strategies": [
+          {
+            "strategy": "大井短_3連単1点",
+            "cost": 100,
+            "return": 1120,
+            "pnl": 1020,
+            "hit": true
+          },
+          {
+            "strategy": "大井短_馬単1点",
+            "cost": 100,
+            "return": 210,
+            "pnl": 110,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260612_10",
+        "date": "2026-06-12",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 400,
+        "total_return": 1520,
+        "total_pnl": 1120,
+        "strategies": [
+          {
+            "strategy": "大井中長_馬単流し",
+            "cost": 300,
+            "return": 0,
+            "pnl": -300,
+            "hit": false
+          },
+          {
+            "strategy": "大井中長_3連複1点",
+            "cost": 100,
+            "return": 1520,
+            "pnl": 1420,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "20_20260612_11",
+        "date": "2026-06-12",
+        "venue": "大井",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "大井短_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "大井短_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
       {
         "race_id": "20_20260611_02",
         "date": "2026-06-11",
