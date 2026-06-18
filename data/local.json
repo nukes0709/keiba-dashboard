@@ -1,6 +1,6 @@
 {
   "performance": {
-    "generated_at": "2026-06-18T08:05:06.366133",
+    "generated_at": "2026-06-18T22:06:08.115880",
     "type": "backtest",
     "period": {
       "start": "2026-03-18",
@@ -390,19 +390,19 @@
     ]
   },
   "live": {
-    "generated_at": "2026-06-18T08:05:07.068472",
+    "generated_at": "2026-06-18T22:06:08.688299",
     "status": "live",
     "summary": {
       "start_date": "2026-03-27",
-      "end_date": "2026-06-17",
-      "n_days": 45,
-      "n_bets": 393,
+      "end_date": "2026-06-18",
+      "n_days": 46,
+      "n_bets": 396,
       "n_hits": 55,
-      "hit_rate": 14.0,
-      "total_cost": 61100,
+      "hit_rate": 13.9,
+      "total_cost": 61400,
       "total_return": 45890,
-      "profit": -15210,
-      "roi": 75.1
+      "profit": -15510,
+      "roi": 74.7
     },
     "monthly": [
       {
@@ -437,13 +437,13 @@
       },
       {
         "month": "2026-06",
-        "n_bets": 78,
+        "n_bets": 81,
         "hits": 16,
-        "cost": 9200,
+        "cost": 9500,
         "return": 7150,
-        "pnl": -2050,
-        "cum_pnl": -15210,
-        "roi": 77.7
+        "pnl": -2350,
+        "cum_pnl": -15510,
+        "roi": 75.3
       }
     ],
     "strategies": [
@@ -490,18 +490,18 @@
         "profit": 1590
       },
       {
-        "strategy": "川崎短_単勝",
-        "n_bets": 30,
-        "hits": 13,
-        "roi": 85.0,
-        "profit": -450
-      },
-      {
         "strategy": "浦和中長_ワイド",
         "n_bets": 19,
         "hits": 7,
         "roi": 82.6,
         "profit": -330
+      },
+      {
+        "strategy": "川崎短_単勝",
+        "n_bets": 33,
+        "hits": 13,
+        "roi": 77.3,
+        "profit": -750
       },
       {
         "strategy": "大井短_馬単1点",
@@ -575,6 +575,14 @@
       }
     ],
     "daily": [
+      {
+        "date": "2026-06-18",
+        "n_bets": 3,
+        "hits": 0,
+        "cost": 300,
+        "return": 0,
+        "pnl": -300
+      },
       {
         "date": "2026-06-17",
         "n_bets": 2,
@@ -806,22 +814,68 @@
         "cost": 800,
         "return": 0,
         "pnl": -800
-      },
-      {
-        "date": "2026-04-27",
-        "n_bets": 10,
-        "hits": 1,
-        "cost": 1200,
-        "return": 560,
-        "pnl": -640
       }
     ]
   },
   "history": {
-    "generated_at": "2026-06-18T08:05:07.054001",
+    "generated_at": "2026-06-18T22:06:08.672156",
     "type": "live",
-    "n_races": 196,
+    "n_races": 199,
     "races": [
+      {
+        "race_id": "21_20260618_02",
+        "date": "2026-06-18",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "川崎短_単勝",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260618_07",
+        "date": "2026-06-18",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "川崎短_単勝",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "21_20260618_10",
+        "date": "2026-06-18",
+        "venue": "川崎",
+        "n_strategies": 1,
+        "total_cost": 100,
+        "total_return": 0,
+        "total_pnl": -100,
+        "strategies": [
+          {
+            "strategy": "川崎短_単勝",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
       {
         "race_id": "21_20260617_03",
         "date": "2026-06-17",
