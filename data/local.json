@@ -1,6 +1,6 @@
 {
   "performance": {
-    "generated_at": "2026-06-19T22:06:16.751153",
+    "generated_at": "2026-06-22T08:04:15.665398",
     "type": "backtest",
     "period": {
       "start": "2026-03-18",
@@ -390,7 +390,7 @@
     ]
   },
   "live": {
-    "generated_at": "2026-06-19T22:06:17.341047",
+    "generated_at": "2026-06-22T08:04:16.284423",
     "status": "live",
     "summary": {
       "start_date": "2026-03-27",
@@ -818,7 +818,7 @@
     ]
   },
   "history": {
-    "generated_at": "2026-06-19T22:06:17.327693",
+    "generated_at": "2026-06-22T08:04:16.270668",
     "type": "live",
     "n_races": 204,
     "races": [
