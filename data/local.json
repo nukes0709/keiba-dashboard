@@ -1,6 +1,6 @@
 {
   "performance": {
-    "generated_at": "2026-07-15T08:06:27.376246",
+    "generated_at": "2026-07-15T22:06:15.902469",
     "type": "backtest",
     "period": {
       "start": "2026-03-18",
@@ -390,19 +390,19 @@
     ]
   },
   "live": {
-    "generated_at": "2026-07-15T08:06:28.021002",
+    "generated_at": "2026-07-15T22:06:16.530109",
     "status": "live",
     "summary": {
       "start_date": "2026-03-27",
-      "end_date": "2026-07-14",
-      "n_days": 64,
-      "n_bets": 566,
-      "n_hits": 82,
-      "hit_rate": 14.5,
-      "total_cost": 91600,
-      "total_return": 62140,
-      "profit": -29460,
-      "roi": 67.8
+      "end_date": "2026-07-15",
+      "n_days": 65,
+      "n_bets": 582,
+      "n_hits": 85,
+      "hit_rate": 14.6,
+      "total_cost": 95000,
+      "total_return": 65940,
+      "profit": -29060,
+      "roi": 69.4
     },
     "monthly": [
       {
@@ -447,13 +447,13 @@
       },
       {
         "month": "2026-07",
-        "n_bets": 78,
-        "hits": 13,
-        "cost": 11800,
-        "return": 6000,
-        "pnl": -5800,
-        "cum_pnl": -29460,
-        "roi": 50.8
+        "n_bets": 94,
+        "hits": 16,
+        "cost": 15200,
+        "return": 9800,
+        "pnl": -5400,
+        "cum_pnl": -29060,
+        "roi": 64.5
       }
     ],
     "strategies": [
@@ -473,17 +473,17 @@
       },
       {
         "strategy": "名古屋短_3連単1点",
-        "n_bets": 23,
+        "n_bets": 25,
         "hits": 5,
-        "roi": 233.9,
-        "profit": 3080
+        "roi": 215.2,
+        "profit": 2880
       },
       {
         "strategy": "名古屋短_馬単1点",
-        "n_bets": 23,
-        "hits": 8,
-        "roi": 140.9,
-        "profit": 940
+        "n_bets": 25,
+        "hits": 9,
+        "roi": 145.6,
+        "profit": 1140
       },
       {
         "strategy": "大井中長_3連複1点",
@@ -494,10 +494,10 @@
       },
       {
         "strategy": "浦和中長_3連単BOX3",
-        "n_bets": 31,
-        "hits": 4,
-        "roi": 82.8,
-        "profit": -3190
+        "n_bets": 33,
+        "hits": 5,
+        "roi": 94.2,
+        "profit": -1150
       },
       {
         "strategy": "川崎短_単勝",
@@ -508,10 +508,10 @@
       },
       {
         "strategy": "浦和中長_ワイド",
-        "n_bets": 31,
-        "hits": 11,
+        "n_bets": 33,
+        "hits": 12,
         "roi": 80.0,
-        "profit": -620
+        "profit": -660
       },
       {
         "strategy": "大井短_馬単1点",
@@ -529,10 +529,10 @@
       },
       {
         "strategy": "浦和マイル_3連単流し",
-        "n_bets": 122,
+        "n_bets": 130,
         "hits": 3,
-        "roi": 35.0,
-        "profit": -15850
+        "roi": 32.9,
+        "profit": -17450
       },
       {
         "strategy": "大井短_3連単1点",
@@ -585,6 +585,14 @@
       }
     ],
     "daily": [
+      {
+        "date": "2026-07-15",
+        "n_bets": 16,
+        "hits": 3,
+        "cost": 3400,
+        "return": 3800,
+        "pnl": 400
+      },
       {
         "date": "2026-07-14",
         "n_bets": 14,
@@ -816,22 +824,258 @@
         "cost": 200,
         "return": 0,
         "pnl": -200
-      },
-      {
-        "date": "2026-05-29",
-        "n_bets": 10,
-        "hits": 2,
-        "cost": 2600,
-        "return": 5620,
-        "pnl": 3020
       }
     ]
   },
   "history": {
-    "generated_at": "2026-07-15T08:06:28.003277",
+    "generated_at": "2026-07-15T22:06:16.512312",
     "type": "live",
-    "n_races": 237,
+    "n_races": 246,
     "races": [
+      {
+        "race_id": "18_20260715_01",
+        "date": "2026-07-15",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260715_02",
+        "date": "2026-07-15",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260715_03",
+        "date": "2026-07-15",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260715_04",
+        "date": "2026-07-15",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260715_05",
+        "date": "2026-07-15",
+        "venue": "浦和",
+        "n_strategies": 2,
+        "total_cost": 700,
+        "total_return": 0,
+        "total_pnl": -700,
+        "strategies": [
+          {
+            "strategy": "浦和中長_3連単BOX3",
+            "cost": 600,
+            "return": 0,
+            "pnl": -600,
+            "hit": false
+          },
+          {
+            "strategy": "浦和中長_ワイド",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260715_08",
+        "date": "2026-07-15",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260715_09",
+        "date": "2026-07-15",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260715_10",
+        "date": "2026-07-15",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260715_11",
+        "date": "2026-07-15",
+        "venue": "浦和",
+        "n_strategies": 1,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "浦和マイル_3連単流し",
+            "cost": 200,
+            "return": 0,
+            "pnl": -200,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "18_20260715_12",
+        "date": "2026-07-15",
+        "venue": "浦和",
+        "n_strategies": 2,
+        "total_cost": 700,
+        "total_return": 3400,
+        "total_pnl": 2700,
+        "strategies": [
+          {
+            "strategy": "浦和中長_3連単BOX3",
+            "cost": 600,
+            "return": 3240,
+            "pnl": 2640,
+            "hit": true
+          },
+          {
+            "strategy": "浦和中長_ワイド",
+            "cost": 100,
+            "return": 160,
+            "pnl": 60,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260715_03",
+        "date": "2026-07-15",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 400,
+        "total_pnl": 200,
+        "strategies": [
+          {
+            "strategy": "名古屋短_馬単1点",
+            "cost": 100,
+            "return": 400,
+            "pnl": 300,
+            "hit": true
+          },
+          {
+            "strategy": "名古屋短_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
+      {
+        "race_id": "24_20260715_10",
+        "date": "2026-07-15",
+        "venue": "名古屋",
+        "n_strategies": 2,
+        "total_cost": 200,
+        "total_return": 0,
+        "total_pnl": -200,
+        "strategies": [
+          {
+            "strategy": "名古屋短_馬単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          },
+          {
+            "strategy": "名古屋短_3連単1点",
+            "cost": 100,
+            "return": 0,
+            "pnl": -100,
+            "hit": false
+          }
+        ]
+      },
       {
         "race_id": "18_20260714_03",
         "date": "2026-07-14",
@@ -5860,60 +6104,6 @@
             "return": 0,
             "pnl": -100,
             "hit": false
-          }
-        ]
-      },
-      {
-        "race_id": "21_20260515_02",
-        "date": "2026-05-15",
-        "venue": "川崎",
-        "n_strategies": 1,
-        "total_cost": 100,
-        "total_return": 0,
-        "total_pnl": -100,
-        "strategies": [
-          {
-            "strategy": "川崎短_単勝",
-            "cost": 100,
-            "return": 0,
-            "pnl": -100,
-            "hit": false
-          }
-        ]
-      },
-      {
-        "race_id": "21_20260515_04",
-        "date": "2026-05-15",
-        "venue": "川崎",
-        "n_strategies": 1,
-        "total_cost": 100,
-        "total_return": 0,
-        "total_pnl": -100,
-        "strategies": [
-          {
-            "strategy": "川崎短_単勝",
-            "cost": 100,
-            "return": 0,
-            "pnl": -100,
-            "hit": false
-          }
-        ]
-      },
-      {
-        "race_id": "21_20260515_07",
-        "date": "2026-05-15",
-        "venue": "川崎",
-        "n_strategies": 1,
-        "total_cost": 100,
-        "total_return": 260,
-        "total_pnl": 160,
-        "strategies": [
-          {
-            "strategy": "川崎短_単勝",
-            "cost": 100,
-            "return": 260,
-            "pnl": 160,
-            "hit": true
           }
         ]
       }
